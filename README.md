@@ -11,6 +11,8 @@ React site presents the results.
 ## Quick start
 
 ```bash
+git clone https://github.com/harryfrzz/composio-app-research.git
+cd composio-app-research
 cp .env.example .env      # add COMPOSIO_API_KEY and OPENAI_API_KEY
 ./run.sh                  # runs the whole pipeline end to end
 ```
