@@ -38,7 +38,7 @@ echo "[2/8] verify pass 1 — accuracy report + failure modes"
 "$PY" research_agent/verify.py
 
 echo "[3/8] pass 2 — corrected rerun on all apps (uses the failure modes above)"
-"$PY" research_agent/agent.py --prompt-version pass2 --output data/pass2_full_raw.jsonl --force
+"$PY" research_agent/agent.py --prompt-version pass2 --output data/pass2_full_raw.jsonl $FORCE
 
 echo "[4/8] verify pass 2 — writes the canonical data/pass2_corrected.json"
 "$PY" research_agent/verify.py --pass2 data/pass2_full_raw.jsonl
