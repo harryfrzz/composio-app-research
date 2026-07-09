@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "description": "Human-verified gold standard. Each field was read by hand from the cited official documentation page (not an LLM verifier). Used to score agent pass-1 vs pass-2 on the fields that can be grounded objectively in docs. auth_methods and api_surface.type are doc-objective; access_tier is a documented judgment call and is scored separately.",
+    "verified_by": "manual docs cross-check via direct fetch",
+    "verified_on": "2026-07-09",
+    "enum_notes": "auth_methods in {oauth2, api_key, basic, token, other}; a personal/API token = token, an API key = api_key, HTTP Basic = basic, a developer/non-standard token = other."
+  },
+  "apps": [
+    {
+      "id": 81, "app": "Stripe",
+      "auth_methods": ["api_key", "basic"],
+      "api_surface_type": "REST",
+      "access_tier": "self_serve_free",
+      "source": "https://docs.stripe.com/api/authentication",
+      "quote": "The Stripe API uses API keys... authenticates requests using HTTP Basic Auth. Provide your API key as the basic auth username value. Test mode secret keys are free."
+    },
+    {
+      "id": 61, "app": "GitHub",
+      "auth_methods": ["oauth2", "token", "basic"],
+      "api_surface_type": "Both",
+      "access_tier": "self_serve_free",
+      "source": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "quote": "create a personal access token, generate a token with a GitHub App, or use OAuth... Basic authentication for specific app endpoints; username/password not supported. GitHub also has a GraphQL API."
+    },
+    {
+      "id": 21, "app": "Slack",
+      "auth_methods": ["oauth2", "token"],
+      "api_surface_type": "REST",
+      "access_tier": "self_serve_free",
+      "source": "https://docs.slack.dev/authentication/tokens",
+      "quote": "Bot tokens (xoxb-), user tokens (xoxp-), app-level tokens (xapp-) obtained via the OAuth flow/OAuth scopes."
+    },
+    {
+      "id": 71, "app": "Notion",
+      "auth_methods": ["oauth2", "token"],
+      "api_surface_type": "REST",
+      "access_tier": "self_serve_free",
+      "source": "https://developers.notion.com/docs/authorization",
+      "quote": "Internal connections use a static API token; personal access tokens use a user-scoped token; public connections use the OAuth 2.0 protocol."
+    },
+    {
+      "id": 11, "app": "Zendesk",
+      "auth_methods": ["oauth2", "token", "basic"],
+      "api_surface_type": "REST",
+      "access_tier": "self_serve_trial",
+      "source": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "quote": "API tokens (used with basic auth email/token), OAuth access tokens (Bearer), and legacy basic authentication are supported."
+    },
+    {
+      "id": 31, "app": "Google Ads",
+      "auth_methods": ["oauth2", "other"],
+      "api_surface_type": "REST",
+      "access_tier": "admin_approval_required",
+      "source": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+      "quote": "Google Ads API also uses the OAuth 2.0 protocol... In addition to the OAuth 2.0 credentials, you also need a developer token to make API calls (developer token requires application/approval)."
+    },
+    {
+      "id": 41, "app": "Shopify",
+      "auth_methods": ["oauth2", "token"],
+      "api_surface_type": "Both",
+      "access_tier": "self_serve_free",
+      "source": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "quote": "OAuth 2.0 is the industry-standard protocol... session tokens and access tokens acquired through token exchange or authorization code grant. Admin API offers REST and GraphQL."
+    },
+    {
+      "id": 1, "app": "Salesforce",
+      "auth_methods": ["oauth2"],
+      "api_surface_type": "Both",
+      "access_tier": "self_serve_free",
+      "source": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+      "quote": "Salesforce APIs use OAuth 2.0 for connected apps; free Developer Edition org is available; REST and GraphQL APIs are offered."
+    }
+  ]
+}

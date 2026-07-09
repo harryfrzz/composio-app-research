@@ -1,0 +1,1797 @@
+{
+  "total_apps": 100,
+  "traces_found": 100,
+  "fully_automated_apps": 37,
+  "needed_human_apps": 63,
+  "fully_automated_pct": 37.0,
+  "human_review_reason_breakdown": {
+    "gated_or_pricing_ambiguity": 55,
+    "auth_inference": 4,
+    "mcp_uncertainty": 3,
+    "docs_unfetchable_or_js": 1
+  },
+  "totals": {
+    "tool_calls": 576,
+    "model_rounds": 680,
+    "prompt_tokens": 6808848,
+    "completion_tokens": 117989
+  },
+  "averages_per_app": {
+    "tool_calls": 5.76,
+    "model_rounds": 6.8
+  },
+  "composio_tool_usage": {
+    "COMPOSIO_MULTI_EXECUTE_TOOL": 409,
+    "COMPOSIO_SEARCH_TOOLS": 101,
+    "COMPOSIO_GET_TOOL_SCHEMAS": 63,
+    "COMPOSIO_REMOTE_WORKBENCH": 3
+  },
+  "per_app": [
+    {
+      "id": 4,
+      "app": "Attio",
+      "category": "CRM and Sales",
+      "fully_automated": true,
+      "agent_confidence": 95,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 3,
+      "app": "Pipedrive",
+      "category": "CRM and Sales",
+      "fully_automated": false,
+      "agent_confidence": 52,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 8,
+      "app": "Close",
+      "category": "CRM and Sales",
+      "fully_automated": true,
+      "agent_confidence": 95,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 6,
+      "app": "Podio",
+      "category": "CRM and Sales",
+      "fully_automated": true,
+      "agent_confidence": 91,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 5,
+      "app": "Twenty",
+      "category": "CRM and Sales",
+      "fully_automated": false,
+      "agent_confidence": 74,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 7,
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "fully_automated": false,
+      "agent_confidence": 67,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 2,
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "fully_automated": false,
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "fully_automated": false,
+      "agent_confidence": 78,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 10,
+      "app": "DealCloud",
+      "category": "CRM and Sales",
+      "fully_automated": false,
+      "agent_confidence": 86,
+      "needs_human_review": true,
+      "review_reason_category": "auth_inference",
+      "trace_found": true,
+      "rounds": 5,
+      "tool_calls": 4,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 9,
+      "app": "Copper",
+      "category": "CRM and Sales",
+      "fully_automated": false,
+      "agent_confidence": 86,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 13,
+      "app": "Freshdesk",
+      "category": "Support and Helpdesk",
+      "fully_automated": false,
+      "agent_confidence": 63,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 15,
+      "app": "Pylon",
+      "category": "Support and Helpdesk",
+      "fully_automated": true,
+      "agent_confidence": 94,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 16,
+      "app": "LiveAgent",
+      "category": "Support and Helpdesk",
+      "fully_automated": false,
+      "agent_confidence": 56,
+      "needs_human_review": true,
+      "review_reason_category": "auth_inference",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 14,
+      "app": "Front",
+      "category": "Support and Helpdesk",
+      "fully_automated": true,
+      "agent_confidence": 91,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "fully_automated": false,
+      "agent_confidence": 81,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 12,
+      "app": "Intercom",
+      "category": "Support and Helpdesk",
+      "fully_automated": true,
+      "agent_confidence": 93,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 17,
+      "app": "Plain",
+      "category": "Support and Helpdesk",
+      "fully_automated": false,
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 18,
+      "app": "Help Scout",
+      "category": "Support and Helpdesk",
+      "fully_automated": false,
+      "agent_confidence": 84,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 25,
+      "app": "Pumble",
+      "category": "Communications and Messaging",
+      "fully_automated": true,
+      "agent_confidence": 87,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 23,
+      "app": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 82,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 22,
+      "app": "Twilio",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 87,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 24,
+      "app": "Lark (Larksuite)",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 31,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 19,
+      "app": "Gorgias",
+      "category": "Support and Helpdesk",
+      "fully_automated": false,
+      "agent_confidence": 84,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 20,
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "fully_automated": false,
+      "agent_confidence": 80,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 80,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 26,
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 88,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 28,
+      "app": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 72,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 29,
+      "app": "Aircall",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 82,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 30,
+      "app": "Vonage",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 74,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 27,
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "fully_automated": false,
+      "agent_confidence": 78,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": false,
+      "agent_confidence": 83,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 33,
+      "app": "LinkedIn Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": true,
+      "agent_confidence": 90,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 34,
+      "app": "GoHighLevel",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": false,
+      "agent_confidence": 68,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_REMOTE_WORKBENCH",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 32,
+      "app": "Meta Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": false,
+      "agent_confidence": 61,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 7,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 36,
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": true,
+      "agent_confidence": 94,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 39,
+      "app": "Threads (Meta)",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": false,
+      "agent_confidence": 71,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 37,
+      "app": "systeme.io",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": false,
+      "agent_confidence": 34,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 8,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 1
+    },
+    {
+      "id": 40,
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": false,
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 38,
+      "app": "Pinterest",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": true,
+      "agent_confidence": 90,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 35,
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "fully_automated": false,
+      "agent_confidence": 81,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "fully_automated": false,
+      "agent_confidence": 82,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 43,
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "fully_automated": false,
+      "agent_confidence": 86,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 42,
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "fully_automated": false,
+      "agent_confidence": 80,
+      "needs_human_review": true,
+      "review_reason_category": "mcp_uncertainty",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 46,
+      "app": "Squarespace",
+      "category": "Ecommerce",
+      "fully_automated": true,
+      "agent_confidence": 90,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 5,
+      "tool_calls": 4,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "fully_automated": false,
+      "agent_confidence": 70,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 49,
+      "app": "Amazon Selling Partner",
+      "category": "Ecommerce",
+      "fully_automated": false,
+      "agent_confidence": 83,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 45,
+      "app": "Magento (Adobe Commerce)",
+      "category": "Ecommerce",
+      "fully_automated": false,
+      "agent_confidence": 76,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 47,
+      "app": "Ecwid",
+      "category": "Ecommerce",
+      "fully_automated": true,
+      "agent_confidence": 91,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 48,
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "fully_automated": true,
+      "agent_confidence": 84,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 51,
+      "app": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": false,
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "review_reason_category": "mcp_uncertainty",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 52,
+      "app": "SE Ranking",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": true,
+      "agent_confidence": 92,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 5,
+      "tool_calls": 4,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 53,
+      "app": "Ahrefs",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": true,
+      "agent_confidence": 95,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 5,
+      "tool_calls": 4,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 54,
+      "app": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": true,
+      "agent_confidence": 93,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 50,
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "fully_automated": false,
+      "agent_confidence": 64,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 55,
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": true,
+      "agent_confidence": 94,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 58,
+      "app": "Sherlock",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": false,
+      "agent_confidence": 71,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 8,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 1
+    },
+    {
+      "id": 57,
+      "app": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": true,
+      "agent_confidence": 89,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 56,
+      "app": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": false,
+      "agent_confidence": 66,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 59,
+      "app": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": true,
+      "agent_confidence": 85,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 60,
+      "app": "Clay",
+      "category": "Data, SEO and Scraping",
+      "fully_automated": false,
+      "agent_confidence": 71,
+      "needs_human_review": true,
+      "review_reason_category": "auth_inference",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 62,
+      "app": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": false,
+      "agent_confidence": 82,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": false,
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 63,
+      "app": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": true,
+      "agent_confidence": 83,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 66,
+      "app": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": false,
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_REMOTE_WORKBENCH",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 65,
+      "app": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": false,
+      "agent_confidence": 90,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 68,
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": false,
+      "agent_confidence": 73,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_REMOTE_WORKBENCH",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 67,
+      "app": "Snowflake",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": false,
+      "agent_confidence": 77,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 69,
+      "app": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": true,
+      "agent_confidence": 94,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 70,
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": true,
+      "agent_confidence": 94,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "fully_automated": true,
+      "agent_confidence": 95,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 5,
+      "tool_calls": 4,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 64,
+      "app": "Cloudflare",
+      "category": "Developer, Infra and Data platforms",
+      "fully_automated": false,
+      "agent_confidence": 72,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 73,
+      "app": "Linear",
+      "category": "Productivity and Project Management",
+      "fully_automated": true,
+      "agent_confidence": 96,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 77,
+      "app": "ClickUp",
+      "category": "Productivity and Project Management",
+      "fully_automated": true,
+      "agent_confidence": 93,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 5,
+      "tool_calls": 4,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 72,
+      "app": "Airtable",
+      "category": "Productivity and Project Management",
+      "fully_automated": false,
+      "agent_confidence": 90,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 76,
+      "app": "Monday.com",
+      "category": "Productivity and Project Management",
+      "fully_automated": true,
+      "agent_confidence": 92,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 74,
+      "app": "Jira",
+      "category": "Productivity and Project Management",
+      "fully_automated": true,
+      "agent_confidence": 90,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 75,
+      "app": "Asana",
+      "category": "Productivity and Project Management",
+      "fully_automated": true,
+      "agent_confidence": 94,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 78,
+      "app": "Coda",
+      "category": "Productivity and Project Management",
+      "fully_automated": false,
+      "agent_confidence": 78,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 79,
+      "app": "Smartsheet",
+      "category": "Productivity and Project Management",
+      "fully_automated": true,
+      "agent_confidence": 84,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 82,
+      "app": "Plaid",
+      "category": "Finance and Fintech",
+      "fully_automated": false,
+      "agent_confidence": 82,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "fully_automated": true,
+      "agent_confidence": 95,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 85,
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "fully_automated": true,
+      "agent_confidence": 89,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 83,
+      "app": "Binance",
+      "category": "Finance and Fintech",
+      "fully_automated": false,
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 80,
+      "app": "Harvest",
+      "category": "Productivity and Project Management",
+      "fully_automated": false,
+      "agent_confidence": 84,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 86,
+      "app": "QuickBooks",
+      "category": "Finance and Fintech",
+      "fully_automated": false,
+      "agent_confidence": 42,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 84,
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "fully_automated": false,
+      "agent_confidence": 54,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 88,
+      "app": "Brex",
+      "category": "Finance and Fintech",
+      "fully_automated": true,
+      "agent_confidence": 89,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 87,
+      "app": "Xero",
+      "category": "Finance and Fintech",
+      "fully_automated": false,
+      "agent_confidence": 86,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 89,
+      "app": "Ramp",
+      "category": "Finance and Fintech",
+      "fully_automated": true,
+      "agent_confidence": 87,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 92,
+      "app": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "fully_automated": false,
+      "agent_confidence": 72,
+      "needs_human_review": true,
+      "review_reason_category": "docs_unfetchable_or_js",
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 90,
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "fully_automated": false,
+      "agent_confidence": 61,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 8,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 1
+    },
+    {
+      "id": 91,
+      "app": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "fully_automated": false,
+      "agent_confidence": 56,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 94,
+      "app": "Consensus",
+      "category": "AI, Research and Media-native",
+      "fully_automated": true,
+      "agent_confidence": 83,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 95,
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "fully_automated": true,
+      "agent_confidence": 92,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 6,
+      "tool_calls": 5,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 93,
+      "app": "Fathom",
+      "category": "AI, Research and Media-native",
+      "fully_automated": true,
+      "agent_confidence": 86,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 99,
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "fully_automated": true,
+      "agent_confidence": 92,
+      "needs_human_review": false,
+      "review_reason_category": null,
+      "trace_found": true,
+      "rounds": 5,
+      "tool_calls": 4,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 96,
+      "app": "Devin",
+      "category": "AI, Research and Media-native",
+      "fully_automated": false,
+      "agent_confidence": 81,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 100,
+      "app": "Grain",
+      "category": "AI, Research and Media-native",
+      "fully_automated": false,
+      "agent_confidence": 58,
+      "needs_human_review": true,
+      "review_reason_category": "gated_or_pricing_ambiguity",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 97,
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "fully_automated": false,
+      "agent_confidence": 72,
+      "needs_human_review": true,
+      "review_reason_category": "mcp_uncertainty",
+      "trace_found": true,
+      "rounds": 7,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 0
+    },
+    {
+      "id": 98,
+      "app": "Mermaid CLI",
+      "category": "AI, Research and Media-native",
+      "fully_automated": false,
+      "agent_confidence": 72,
+      "needs_human_review": true,
+      "review_reason_category": "auth_inference",
+      "trace_found": true,
+      "rounds": 8,
+      "tool_calls": 6,
+      "distinct_tools": [
+        "COMPOSIO_GET_TOOL_SCHEMAS",
+        "COMPOSIO_MULTI_EXECUTE_TOOL",
+        "COMPOSIO_SEARCH_TOOLS"
+      ],
+      "validation_retries": 1
+    }
+  ]
+}

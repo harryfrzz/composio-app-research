@@ -1,0 +1,29 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+
+# Node / web app build artifacts
+node_modules/
+dist/
+
+# OS / editor / local tooling
+.DS_Store
+.claude/
+
+# Committed as submission evidence: pass1_raw.jsonl (the "before" rows behind the
+# accuracy report) and data/traces/ (the automated-vs-human agent story). These are
+# the strongest proof the before/after is real and that Composio was dogfooded.
+
+# Genuinely local-only: the Composio SDK cache and the full fetched-page dumps
+# (large raw HTML text pulled during verification, not part of the deliverable).
+data/.composio-cache/
+data/verification_fetched_pages.json
+
+# Full raw tool-call traces embed unredacted scraped page content (third-party
+# API keys leaked from fetched docs). Unreferenced by the app; kept local only.
+# The compact traces in data/traces/ are the committed evidence instead.
+data/pass2_full_traces/
+
+# Ad-hoc run logs (stdout redirects), not deliverables.
+data/*_run.log

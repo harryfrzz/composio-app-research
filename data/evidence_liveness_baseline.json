@@ -1,0 +1,4584 @@
+{
+  "input": "data/pass2_corrected.json",
+  "total_rows": 100,
+  "unique_urls_checked": 583,
+  "url_verdict_counts": {
+    "ok": 520,
+    "dead": 29,
+    "blocked": 34
+  },
+  "rows_with_dead_evidence": [
+    2,
+    10,
+    12,
+    14,
+    51,
+    52,
+    54,
+    56,
+    57,
+    61,
+    65,
+    67,
+    74,
+    76,
+    77,
+    79,
+    80,
+    84,
+    88,
+    99
+  ],
+  "rows_with_zero_live_evidence": [],
+  "per_row": [
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "evidence_count": 5,
+      "ok": 2,
+      "blocked": 3,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 2,
+      "app": "HubSpot",
+      "evidence_count": 9,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://www.hubspot.com/pricing/api-limits"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 3,
+      "app": "Pipedrive",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 4,
+      "app": "Attio",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 5,
+      "app": "Twenty",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 10,
+      "app": "DealCloud",
+      "evidence_count": 5,
+      "ok": 2,
+      "blocked": 0,
+      "dead": 3,
+      "dead_urls": [
+        "https://api.docs.dealcloud.com/docs/api-keys",
+        "https://api.docs.dealcloud.com/docs/authorization-token",
+        "https://api.docs.dealcloud.com/docs/rate-limits"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 8,
+      "app": "Close",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 7,
+      "app": "Zoho CRM",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 12,
+      "app": "Intercom",
+      "evidence_count": 7,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://developers.intercom.com/docs/references/rest-api/"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 13,
+      "app": "Freshdesk",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 6,
+      "app": "Podio",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 9,
+      "app": "Copper",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 14,
+      "app": "Front",
+      "evidence_count": 6,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://dev.frontapp.com/docs/rate-limits"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 15,
+      "app": "Pylon",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 17,
+      "app": "Plain",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 18,
+      "app": "Help Scout",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 16,
+      "app": "LiveAgent",
+      "evidence_count": 3,
+      "ok": 3,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 20,
+      "app": "Gladly",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 19,
+      "app": "Gorgias",
+      "evidence_count": 8,
+      "ok": 3,
+      "blocked": 5,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 25,
+      "app": "Pumble",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 23,
+      "app": "Zoho Cliq",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 22,
+      "app": "Twilio",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 24,
+      "app": "Lark (Larksuite)",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 26,
+      "app": "Discord",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 29,
+      "app": "Aircall",
+      "evidence_count": 8,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 28,
+      "app": "WhatsApp Business",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 27,
+      "app": "Telegram",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 30,
+      "app": "Vonage",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 34,
+      "app": "GoHighLevel",
+      "evidence_count": 3,
+      "ok": 3,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 37,
+      "app": "systeme.io",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 33,
+      "app": "LinkedIn Ads",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 32,
+      "app": "Meta Ads",
+      "evidence_count": 10,
+      "ok": 10,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 35,
+      "app": "Mailchimp",
+      "evidence_count": 8,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 36,
+      "app": "Klaviyo",
+      "evidence_count": 7,
+      "ok": 0,
+      "blocked": 7,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 38,
+      "app": "Pinterest",
+      "evidence_count": 9,
+      "ok": 9,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 43,
+      "app": "BigCommerce",
+      "evidence_count": 3,
+      "ok": 3,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "evidence_count": 5,
+      "ok": 0,
+      "blocked": 5,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 39,
+      "app": "Threads (Meta)",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 45,
+      "app": "Magento (Adobe Commerce)",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 40,
+      "app": "SendGrid",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 42,
+      "app": "WooCommerce",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 46,
+      "app": "Squarespace",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 48,
+      "app": "Gumroad",
+      "evidence_count": 2,
+      "ok": 2,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 47,
+      "app": "Ecwid",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 50,
+      "app": "fanbasis",
+      "evidence_count": 3,
+      "ok": 3,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 53,
+      "app": "Ahrefs",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 49,
+      "app": "Amazon Selling Partner",
+      "evidence_count": 8,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 51,
+      "app": "DataForSEO",
+      "evidence_count": 5,
+      "ok": 3,
+      "blocked": 0,
+      "dead": 2,
+      "dead_urls": [
+        "https://docs.dataforseo.com/v3/introduction/",
+        "https://docs.dataforseo.com/v3/authentication/"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 52,
+      "app": "SE Ranking",
+      "evidence_count": 7,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://seranking.com/api"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 54,
+      "app": "MrScraper",
+      "evidence_count": 5,
+      "ok": 2,
+      "blocked": 0,
+      "dead": 3,
+      "dead_urls": [
+        "https://docs.mrscraper.com/api-reference/introduction",
+        "https://docs.mrscraper.com/api-reference/authentication",
+        "https://docs.mrscraper.com/docs/billing/billing"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 56,
+      "app": "Firecrawl",
+      "evidence_count": 6,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 2,
+      "dead_urls": [
+        "https://docs.firecrawl.dev/advanced/rate-limits",
+        "https://docs.firecrawl.dev/mcp-server/introduction"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 55,
+      "app": "Apify",
+      "evidence_count": 8,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 59,
+      "app": "Waterfall.io",
+      "evidence_count": 3,
+      "ok": 3,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 58,
+      "app": "Sherlock",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 57,
+      "app": "Bright Data",
+      "evidence_count": 9,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 2,
+      "dead_urls": [
+        "https://docs.brightdata.com/api-reference/introduction",
+        "https://docs.brightdata.com/general/account/api-token"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "evidence_count": 6,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://docs.github.com/en/rest/about-the-rest-api/openapi-description?apiVersion=2026-03-10"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 60,
+      "app": "Clay",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 63,
+      "app": "Netlify",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 62,
+      "app": "Vercel",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 65,
+      "app": "Supabase",
+      "evidence_count": 9,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://github.com/supabase-community/postgres-mcp"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 64,
+      "app": "Cloudflare",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 67,
+      "app": "Snowflake",
+      "evidence_count": 6,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://www.snowflake.com/en/pricing/"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 66,
+      "app": "Neo4j",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 68,
+      "app": "MongoDB Atlas",
+      "evidence_count": 9,
+      "ok": 9,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 70,
+      "app": "Sentry",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 69,
+      "app": "Datadog",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 72,
+      "app": "Airtable",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 73,
+      "app": "Linear",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 74,
+      "app": "Jira",
+      "evidence_count": 7,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://developer.atlassian.com/cloud/jira/platform/dag/rate-limiting/"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 75,
+      "app": "Asana",
+      "evidence_count": 8,
+      "ok": 1,
+      "blocked": 7,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 76,
+      "app": "Monday.com",
+      "evidence_count": 7,
+      "ok": 4,
+      "blocked": 2,
+      "dead": 1,
+      "dead_urls": [
+        "https://developer.monday.com/api-reference/docs/api-coverage-gaps"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 77,
+      "app": "ClickUp",
+      "evidence_count": 6,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://help.clickup.com/hc/en-us/articles/6303426254871-Rate-limits-for-the-API"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 78,
+      "app": "Coda",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 79,
+      "app": "Smartsheet",
+      "evidence_count": 8,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 3,
+      "dead_urls": [
+        "https://developers.smartsheet.com/guides/basics/authentication",
+        "https://developers.smartsheet.com/guides/basics/getting-started",
+        "https://developers.smartsheet.com/guides/basics/throttling-and-rate-limiting"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 80,
+      "app": "Harvest",
+      "evidence_count": 5,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://help.getharvest.com/api-v2/introduction/overview/authentication/"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 84,
+      "app": "Paygent Connect",
+      "evidence_count": 2,
+      "ok": 1,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://www.paygent.biz"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 83,
+      "app": "Binance",
+      "evidence_count": 8,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 82,
+      "app": "Plaid",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 86,
+      "app": "QuickBooks",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 85,
+      "app": "iPayX",
+      "evidence_count": 2,
+      "ok": 2,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 87,
+      "app": "Xero",
+      "evidence_count": 6,
+      "ok": 6,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 88,
+      "app": "Brex",
+      "evidence_count": 9,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://developer.brex.com/reference/overview"
+      ],
+      "has_live_evidence": true
+    },
+    {
+      "id": 90,
+      "app": "PitchBook",
+      "evidence_count": 4,
+      "ok": 2,
+      "blocked": 2,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 89,
+      "app": "Ramp",
+      "evidence_count": 8,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 93,
+      "app": "Fathom",
+      "evidence_count": 3,
+      "ok": 3,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 91,
+      "app": "NotebookLM",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 92,
+      "app": "Otter AI",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 94,
+      "app": "Consensus",
+      "evidence_count": 4,
+      "ok": 2,
+      "blocked": 2,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 95,
+      "app": "Reducto",
+      "evidence_count": 5,
+      "ok": 5,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 96,
+      "app": "Devin",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 97,
+      "app": "higgsfield",
+      "evidence_count": 4,
+      "ok": 4,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 98,
+      "app": "Mermaid CLI",
+      "evidence_count": 3,
+      "ok": 2,
+      "blocked": 1,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 100,
+      "app": "Grain",
+      "evidence_count": 7,
+      "ok": 7,
+      "blocked": 0,
+      "dead": 0,
+      "dead_urls": [],
+      "has_live_evidence": true
+    },
+    {
+      "id": 99,
+      "app": "YouTube Transcript",
+      "evidence_count": 9,
+      "ok": 8,
+      "blocked": 0,
+      "dead": 1,
+      "dead_urls": [
+        "https://glama.ai/mcp/servers/67vqrk6f6m"
+      ],
+      "has_live_evidence": true
+    }
+  ],
+  "url_status": {
+    "https://airtable.com/developers": {
+      "url": "https://airtable.com/developers",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://airtable.com/developers/web/api/rate-limits": {
+      "url": "https://airtable.com/developers/web/api/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://airtable.com/developers/web/api/billing-plans": {
+      "url": "https://airtable.com/developers/web/api/billing-plans",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://airtable.com/developers/web/api/introduction": {
+      "url": "https://airtable.com/developers/web/api/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://airtable.com/developers/web/api/authentication": {
+      "url": "https://airtable.com/developers/web/api/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://airtable.com/developers/web/api/changelog": {
+      "url": "https://airtable.com/developers/web/api/changelog",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://ahrefs.com/api": {
+      "url": "https://ahrefs.com/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://aircall.io/": {
+      "url": "https://aircall.io/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://ai.google.dev/gemini-api/docs/api-key": {
+      "url": "https://ai.google.dev/gemini-api/docs/api-key",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://ai.google.dev/gemini-api/docs": {
+      "url": "https://ai.google.dev/gemini-api/docs",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://api-docs.ecwid.com": {
+      "url": "https://api-docs.ecwid.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://aircall.io/pricing/": {
+      "url": "https://aircall.io/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://api.docs.dealcloud.com/": {
+      "url": "https://api.docs.dealcloud.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://attio.com/": {
+      "url": "https://attio.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://attio.com/pricing": {
+      "url": "https://attio.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://ahrefs.com/pricing": {
+      "url": "https://ahrefs.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://binance-docs.github.io/apidocs/spot/en/": {
+      "url": "https://binance-docs.github.io/apidocs/spot/en/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://api.docs.dealcloud.com/mcp": {
+      "url": "https://api.docs.dealcloud.com/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://apify.com/pricing": {
+      "url": "https://apify.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://calendly.com/d/ctnf-2r8-mmm/fanbasis-discovery-call": {
+      "url": "https://calendly.com/d/ctnf-2r8-mmm/fanbasis-discovery-call",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://apify.com/change-log": {
+      "url": "https://apify.com/change-log",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://coda.io/developers/apis/v1": {
+      "url": "https://coda.io/developers/apis/v1",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://close.com/pricing": {
+      "url": "https://close.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://coda.io/developers/apis/v1#section/Using-the-API/Authentication": {
+      "url": "https://coda.io/developers/apis/v1#section/Using-the-API/Authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://api.docs.dealcloud.com/docs/api-keys": {
+      "url": "https://api.docs.dealcloud.com/docs/api-keys",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://coda.io/developers/apis/v1#section/Using-the-API/Rate-limits": {
+      "url": "https://coda.io/developers/apis/v1#section/Using-the-API/Rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://clay.com/pricing": {
+      "url": "https://clay.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://clay.com": {
+      "url": "https://clay.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://brightdata.com": {
+      "url": "https://brightdata.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://brightdata.com/ai/mcp-server": {
+      "url": "https://brightdata.com/ai/mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://clay.com/mcp": {
+      "url": "https://clay.com/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://brightdata.com/pricing": {
+      "url": "https://brightdata.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://api.docs.dealcloud.com/docs/authorization-token": {
+      "url": "https://api.docs.dealcloud.com/docs/authorization-token",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://coda.io/developers": {
+      "url": "https://coda.io/developers",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://clickup.com/api": {
+      "url": "https://clickup.com/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://coda.io/resources/guides/getting_started_with_coda_mcp": {
+      "url": "https://coda.io/resources/guides/getting_started_with_coda_mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work": {
+      "url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dataforseo.com/pricing": {
+      "url": "https://dataforseo.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://cloud.google.com/gemini": {
+      "url": "https://cloud.google.com/gemini",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://api.docs.dealcloud.com/docs/rate-limits": {
+      "url": "https://api.docs.dealcloud.com/docs/rate-limits",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://core.telegram.org/api": {
+      "url": "https://core.telegram.org/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://core.telegram.org/": {
+      "url": "https://core.telegram.org/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://core.telegram.org/api/obtaining_api_id": {
+      "url": "https://core.telegram.org/api/obtaining_api_id",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://core.telegram.org/api/errors": {
+      "url": "https://core.telegram.org/api/errors",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://core.telegram.org/bots": {
+      "url": "https://core.telegram.org/bots",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://consensus.app/home/research-organizations/": {
+      "url": "https://consensus.app/home/research-organizations/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://consensus.app/home/api/": {
+      "url": "https://consensus.app/home/api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://coda.io/pricing": {
+      "url": "https://coda.io/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://core.telegram.org/bots/api": {
+      "url": "https://core.telegram.org/bots/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dev.frontapp.com/reference/introduction": {
+      "url": "https://dev.frontapp.com/reference/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dashboard.plaid.com/signup": {
+      "url": "https://dashboard.plaid.com/signup",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dev.frontapp.com/docs/welcome": {
+      "url": "https://dev.frontapp.com/docs/welcome",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.adobe.com/commerce": {
+      "url": "https://developer.adobe.com/commerce",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.adobe.com/commerce/docs/": {
+      "url": "https://developer.adobe.com/commerce/docs/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.adobe.com/commerce/webapi/graphql/": {
+      "url": "https://developer.adobe.com/commerce/webapi/graphql/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://api.slack.com/docs/rate-limits": {
+      "url": "https://api.slack.com/docs/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer-docs.amazon.com/sp-api/reference/welcome-to-api-references": {
+      "url": "https://developer-docs.amazon.com/sp-api/reference/welcome-to-api-references",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dev.frontapp.com/docs/rate-limits": {
+      "url": "https://dev.frontapp.com/docs/rate-limits",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://developer-docs.amazon.com/sp-api/docs/selling-partner-api-onboarding-overview": {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/selling-partner-api-onboarding-overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.adobe.com/commerce/webapi/rest/": {
+      "url": "https://developer.adobe.com/commerce/webapi/rest/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer-docs.amazon.com/sp-api/docs/general-faq": {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/general-faq",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api": {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/what-is-the-selling-partner-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview": {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/onboarding-overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dev.frontapp.com/docs/mcp-server": {
+      "url": "https://dev.frontapp.com/docs/mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.aircall.io/api-references/#authentication": {
+      "url": "https://developer.aircall.io/api-references/#authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.aircall.io/api-references/#rate-limiting": {
+      "url": "https://developer.aircall.io/api-references/#rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.aircall.io/api-references/": {
+      "url": "https://developer.aircall.io/api-references/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer-docs.amazon.com/sp-api": {
+      "url": "https://developer-docs.amazon.com/sp-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://dev.frontapp.com/docs/authentication": {
+      "url": "https://dev.frontapp.com/docs/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.atlassian.com/cloud/jira/software/rest/intro/": {
+      "url": "https://developer.atlassian.com/cloud/jira/software/rest/intro/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.aircall.io/": {
+      "url": "https://developer.aircall.io/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro": {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/": {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/": {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/rate-limiting/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits": {
+      "url": "https://developer-docs.amazon.com/sp-api/docs/usage-plans-and-rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.atlassian.com/": {
+      "url": "https://developer.atlassian.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.bigcommerce.com/": {
+      "url": "https://developer.bigcommerce.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.clickup.com/docs/getting-started": {
+      "url": "https://developer.clickup.com/docs/getting-started",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.clickup.com/": {
+      "url": "https://developer.clickup.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.close.com/api/overview": {
+      "url": "https://developer.close.com/api/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.close.com/api/overview/api-key-authentication": {
+      "url": "https://developer.close.com/api/overview/api-key-authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.clickup.com/reference/getting-started": {
+      "url": "https://developer.clickup.com/reference/getting-started",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.close.com/api/overview/rate-limits": {
+      "url": "https://developer.close.com/api/overview/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://copper.com": {
+      "url": "https://copper.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.clickup.com/reference/getaccesstoken": {
+      "url": "https://developer.clickup.com/reference/getaccesstoken",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.atlassian.com/cloud/jira/platform/dag/rate-limiting/": {
+      "url": "https://developer.atlassian.com/cloud/jira/platform/dag/rate-limiting/",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://developer.close.com/api/overview/oauth-authentication": {
+      "url": "https://developer.close.com/api/overview/oauth-authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.gladly.com/": {
+      "url": "https://developer.gladly.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.gladly.com/rest/": {
+      "url": "https://developer.gladly.com/rest/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.gladly.com/rest/#section/Authentication": {
+      "url": "https://developer.gladly.com/rest/#section/Authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.gladly.com/rest/#tag/Rate-Limit": {
+      "url": "https://developer.gladly.com/rest/#tag/Rate-Limit",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.helpscout.com/": {
+      "url": "https://developer.helpscout.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.helpscout.com/mailbox-api/overview/authentication/": {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/authentication/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.brex.com/guides/authentication": {
+      "url": "https://developer.brex.com/guides/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.copper.com/introduction/requests.html": {
+      "url": "https://developer.copper.com/introduction/requests.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.copper.com/": {
+      "url": "https://developer.copper.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.copper.com/introduction/best_practices.html": {
+      "url": "https://developer.copper.com/introduction/best_practices.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.copper.com/introduction/authentication.html": {
+      "url": "https://developer.copper.com/introduction/authentication.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.brex.com": {
+      "url": "https://developer.brex.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.brex.com/docs/mcp": {
+      "url": "https://developer.brex.com/docs/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.brex.com/guides/rate_limits": {
+      "url": "https://developer.brex.com/guides/rate_limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.helpscout.com/open-source/": {
+      "url": "https://developer.helpscout.com/open-source/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.monday.com/api-reference/docs/authentication": {
+      "url": "https://developer.monday.com/api-reference/docs/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.brex.com/guides/quickstart": {
+      "url": "https://developer.brex.com/guides/quickstart",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.brex.com/docs/support": {
+      "url": "https://developer.brex.com/docs/support",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.monday.com/api-reference/docs/api-coverage-gaps": {
+      "url": "https://developer.monday.com/api-reference/docs/api-coverage-gaps",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://developer.monday.com/api-reference/docs/basics": {
+      "url": "https://developer.monday.com/api-reference/docs/basics",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/": {
+      "url": "https://developer.helpscout.com/mailbox-api/overview/rate-limiting/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.monday.com/api-reference/docs/rate-limits": {
+      "url": "https://developer.monday.com/api-reference/docs/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.monday.com/api-reference/docs/release-notes": {
+      "url": "https://developer.monday.com/api-reference/docs/release-notes",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.salesforce.com/docs/apis": {
+      "url": "https://developer.salesforce.com/docs/apis",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.salesforce.com/developer-centers/commerce-cloud": {
+      "url": "https://developer.salesforce.com/developer-centers/commerce-cloud",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/headers_api_usage.htm": {
+      "url": "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/headers_api_usage.htm",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.salesforce.com/docs/commerce": {
+      "url": "https://developer.salesforce.com/docs/commerce",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.salesforce.com/docs/commerce/commerce-api/overview": {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.salesforce.com/docs/commerce/b2b-d2c-commerce/overview": {
+      "url": "https://developer.salesforce.com/docs/commerce/b2b-d2c-commerce/overview",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.salesforce.com/docs/commerce/commerce-api/references/shopper-customers": {
+      "url": "https://developer.salesforce.com/docs/commerce/commerce-api/references/shopper-customers",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-intro-flow.html": {
+      "url": "https://developer.salesforce.com/docs/platform/mobile-sdk/guide/oauth-intro-flow.html",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.woocommerce.com/docs/apis/rest-api/authentication/": {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.vonage.com/en/getting-started/concepts/authentication": {
+      "url": "https://developer.vonage.com/en/getting-started/concepts/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.woocommerce.com/docs/apis/rest-api/": {
+      "url": "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.monday.com/api-reference/docs/graphql-overview": {
+      "url": "https://developer.monday.com/api-reference/docs/graphql-overview",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.monday.com/api-reference/docs/platform-mcp-overview": {
+      "url": "https://developer.monday.com/api-reference/docs/platform-mcp-overview",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.vonage.com/en/api-reference": {
+      "url": "https://developer.vonage.com/en/api-reference",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.systeme.io/docs/mcp-server": {
+      "url": "https://developer.systeme.io/docs/mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.systeme.io/reference/api": {
+      "url": "https://developer.systeme.io/reference/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.vonage.com/": {
+      "url": "https://developer.vonage.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.woocommerce.com/docs/apis/store-api/rate-limiting/#limit-information": {
+      "url": "https://developer.woocommerce.com/docs/apis/store-api/rate-limiting/#limit-information",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.xero.com/": {
+      "url": "https://developer.xero.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.asana.com/": {
+      "url": "https://developers.asana.com/",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.xero.com/documentation/api/api-overview": {
+      "url": "https://developer.xero.com/documentation/api/api-overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.asana.com/docs/changelog": {
+      "url": "https://developers.asana.com/docs/changelog",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.asana.com/docs": {
+      "url": "https://developers.asana.com/docs",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.asana.com/docs/overview": {
+      "url": "https://developers.asana.com/docs/overview",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.asana.com/reference": {
+      "url": "https://developers.asana.com/reference",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.asana.com/docs/rate-limits": {
+      "url": "https://developers.asana.com/docs/rate-limits",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.asana.com/reference/rest-api-reference": {
+      "url": "https://developers.asana.com/reference/rest-api-reference",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.binance.com/en/docs/products/spot/rest-api#limits": {
+      "url": "https://developers.binance.com/en/docs/products/spot/rest-api#limits",
+      "status_code": 202,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.binance.com/en/docs/products/spot/rest-api": {
+      "url": "https://developers.binance.com/en/docs/products/spot/rest-api",
+      "status_code": 202,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.binance.com/en/docs/introduction": {
+      "url": "https://developers.binance.com/en/docs/introduction",
+      "status_code": 202,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.zendesk.com/api-reference/introduction/security-and-auth/": {
+      "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.zendesk.com/api-reference/": {
+      "url": "https://developer.zendesk.com/api-reference/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.zendesk.com/api-reference/introduction/rate-limits/": {
+      "url": "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.xero.com/documentation/api/accounting/overview": {
+      "url": "https://developer.xero.com/documentation/api/accounting/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.xero.com/documentation/guides/oauth2/overview/": {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/overview/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.binance.com/en/docs/sdks-tools/overview": {
+      "url": "https://developers.binance.com/en/docs/sdks-tools/overview",
+      "status_code": 202,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.binance.com/en/docs/products/spot/rest-api#signed-endpoint-security": {
+      "url": "https://developers.binance.com/en/docs/products/spot/rest-api#signed-endpoint-security",
+      "status_code": 202,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.binance.com/en/docs/products/spot/user-data-stream": {
+      "url": "https://developers.binance.com/en/docs/products/spot/user-data-stream",
+      "status_code": 202,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.xero.com/documentation/guides/oauth2/limits/": {
+      "url": "https://developer.xero.com/documentation/guides/oauth2/limits/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.brex.com/reference/overview": {
+      "url": "https://developer.brex.com/reference/overview",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://developers.cloudflare.com/api/": {
+      "url": "https://developers.cloudflare.com/api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.cloudflare.com/fundamentals/api/get-started/": {
+      "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.cloudflare.com/fundamentals/api/reference/limits/": {
+      "url": "https://developers.cloudflare.com/fundamentals/api/reference/limits/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.cloudflare.com/fundamentals/api/reference/permissions/": {
+      "url": "https://developers.cloudflare.com/fundamentals/api/reference/permissions/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.cloudflare.com/analytics/graphql-api/": {
+      "url": "https://developers.cloudflare.com/analytics/graphql-api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api": {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/docs/whatsapp": {
+      "url": "https://developers.facebook.com/docs/whatsapp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication": {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/docs/threads": {
+      "url": "https://developers.facebook.com/docs/threads",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization": {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/docs/marketing-apis": {
+      "url": "https://developers.facebook.com/docs/marketing-apis",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started": {
+      "url": "https://developers.facebook.com/docs/whatsapp/cloud-api/get-started",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/ads-commerce/marketing-api/overview/rate-limiting": {
+      "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/overview/rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/docs/graph-api/guides/secure-requests": {
+      "url": "https://developers.facebook.com/docs/graph-api/guides/secure-requests",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform": {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens": {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/access-tokens",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.intuit.com/app/developer/qbo/docs/develop/rate-limits": {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.intuit.com/app/developer/qbo/docs/get-started": {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account#the-account-object": {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account#the-account-object",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.cloudflare.com/api/overview/": {
+      "url": "https://developers.cloudflare.com/api/overview/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/throughput": {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/throughput",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/threads/overview": {
+      "url": "https://developers.facebook.com/documentation/threads/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing": {
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/threads/get-started/create-an-app#app-review": {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/create-an-app#app-review",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/threads": {
+      "url": "https://developers.facebook.com/documentation/threads",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/facebook-login/guides/access-tokens": {
+      "url": "https://developers.facebook.com/documentation/facebook-login/guides/access-tokens",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.facebook.com/documentation/threads/get-started/create-an-app": {
+      "url": "https://developers.facebook.com/documentation/threads/get-started/create-an-app",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.intuit.com/": {
+      "url": "https://developer.intuit.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.freshdesk.com/api/#introduction": {
+      "url": "https://developers.freshdesk.com/api/#introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.freshdesk.com/api/#getting-started": {
+      "url": "https://developers.freshdesk.com/api/#getting-started",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.gorgias.com/reference/authentication": {
+      "url": "https://developers.gorgias.com/reference/authentication",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.freshdesk.com/api/": {
+      "url": "https://developers.freshdesk.com/api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.gorgias.com/": {
+      "url": "https://developers.gorgias.com/",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.freshdesk.com/api/#ratelimit": {
+      "url": "https://developers.freshdesk.com/api/#ratelimit",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.gorgias.com/docs/private-vs-public-app": {
+      "url": "https://developers.gorgias.com/docs/private-vs-public-app",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.gorgias.com/reference/introduction": {
+      "url": "https://developers.gorgias.com/reference/introduction",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization": {
+      "url": "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.gorgias.com/reference/limitations": {
+      "url": "https://developers.gorgias.com/reference/limitations",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.gohighlevel.com/": {
+      "url": "https://developers.gohighlevel.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.google.com/google-ads/api/docs/oauth/access-model": {
+      "url": "https://developers.google.com/google-ads/api/docs/oauth/access-model",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.google.com/google-ads/api/docs/concepts/call-structure": {
+      "url": "https://developers.google.com/google-ads/api/docs/concepts/call-structure",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developer.intuit.com/app/developer/homepage": {
+      "url": "https://developer.intuit.com/app/developer/homepage",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.google.com/google-ads/api/docs/best-practices/quotas": {
+      "url": "https://developers.google.com/google-ads/api/docs/best-practices/quotas",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.google.com/google-ads/api/docs/api-policy/access-levels": {
+      "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.grain.com/mcp": {
+      "url": "https://developers.grain.com/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.grain.com/": {
+      "url": "https://developers.grain.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication": {
+      "url": "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.klaviyo.com/en/docs/authenticate_": {
+      "url": "https://developers.klaviyo.com/en/docs/authenticate_",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server": {
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.klaviyo.com/en/docs/get_started": {
+      "url": "https://developers.klaviyo.com/en/docs/get_started",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.klaviyo.com/en/docs/oauth_overview": {
+      "url": "https://developers.klaviyo.com/en/docs/oauth_overview",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling#rate-limits": {
+      "url": "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling#rate-limits",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview": {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.klaviyo.com/en/reference": {
+      "url": "https://developers.klaviyo.com/en/reference",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.klaviyo.com/en/reference/api_overview": {
+      "url": "https://developers.klaviyo.com/en/reference/api_overview",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.google.com/google-ads/api/docs/get-started/introduction": {
+      "url": "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/api/graphql-overview": {
+      "url": "https://developers.hubspot.com/docs/api/graphql-overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.notion.com/guides/get-started/authorization": {
+      "url": "https://developers.notion.com/guides/get-started/authorization",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.notion.com/guides/mcp/overview": {
+      "url": "https://developers.notion.com/guides/mcp/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.notion.com/reference/intro": {
+      "url": "https://developers.notion.com/reference/intro",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.notion.com/reference/request-limits": {
+      "url": "https://developers.notion.com/reference/request-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/apps/developer-platform/add-features/create-an-app-settings-page#auth": {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/add-features/create-an-app-settings-page#auth",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/api/usage-details": {
+      "url": "https://developers.hubspot.com/docs/api/usage-details",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting": {
+      "url": "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.linear.app": {
+      "url": "https://developers.linear.app",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/ai/build-a-remote-mcp-server-on-hubspots-developer-platform": {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/ai/build-a-remote-mcp-server-on-hubspots-developer-platform",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/apps/ai/mcp-server": {
+      "url": "https://developers.hubspot.com/docs/apps/ai/mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/api-reference/latest/overview": {
+      "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth": {
+      "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/oauth/working-with-oauth",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/docs/getting-started/access-tiers/": {
+      "url": "https://developers.pinterest.com/docs/getting-started/access-tiers/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.intercom.com/docs/guides/mcp": {
+      "url": "https://developers.intercom.com/docs/guides/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pipedrive.com/docs/api/v1": {
+      "url": "https://developers.pipedrive.com/docs/api/v1",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/": {
+      "url": "https://developers.pinterest.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/docs/developer-tools/sdk/": {
+      "url": "https://developers.pinterest.com/docs/developer-tools/sdk/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/docs/api/v5/introduction/": {
+      "url": "https://developers.pinterest.com/docs/api/v5/introduction/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/docs/getting-started/connect-app/": {
+      "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/docs/overview/welcome/": {
+      "url": "https://developers.pinterest.com/docs/overview/welcome/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.podio.com/": {
+      "url": "https://developers.podio.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.notion.com/reference/authentication": {
+      "url": "https://developers.notion.com/reference/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pipedrive.com/": {
+      "url": "https://developers.pipedrive.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.smartsheet.com/": {
+      "url": "https://developers.smartsheet.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/": {
+      "url": "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.pinterest.com/docs/reference/rate-limits/": {
+      "url": "https://developers.pinterest.com/docs/reference/rate-limits/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server": {
+      "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ahrefs.com/en/api/docs/introduction#rate-limiting": {
+      "url": "https://docs.ahrefs.com/en/api/docs/introduction#rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ahrefs.com/en/api/docs/free-test-queries": {
+      "url": "https://docs.ahrefs.com/en/api/docs/free-test-queries",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ahrefs.com/en/api/docs/limits-consumption": {
+      "url": "https://docs.ahrefs.com/en/api/docs/limits-consumption",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.apify.com/api/v2": {
+      "url": "https://docs.apify.com/api/v2",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ahrefs.com/en/api/docs/introduction": {
+      "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.apify.com": {
+      "url": "https://docs.apify.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.attio.com/": {
+      "url": "https://docs.attio.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.apify.com/integrations/mcp": {
+      "url": "https://docs.apify.com/integrations/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.apify.com/limits": {
+      "url": "https://docs.apify.com/limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.attio.com/mcp/overview": {
+      "url": "https://docs.attio.com/mcp/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.bigcommerce.com/developer/docs/ai-agent-setup": {
+      "url": "https://docs.bigcommerce.com/developer/docs/ai-agent-setup",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.squarespace.com/": {
+      "url": "https://developers.squarespace.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.bigcommerce.com/developer/docs/overview/quick-start": {
+      "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.attio.com/rest-api/guides/authentication": {
+      "url": "https://docs.attio.com/rest-api/guides/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.brightdata.com/api-reference/authentication": {
+      "url": "https://docs.brightdata.com/api-reference/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.attio.com/rest-api/overview": {
+      "url": "https://docs.attio.com/rest-api/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.brightdata.com/introduction": {
+      "url": "https://docs.brightdata.com/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.squarespace.com/commerce-apis/authentication-and-permissions": {
+      "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.brightdata.com/ai/mcp-server/overview": {
+      "url": "https://docs.brightdata.com/ai/mcp-server/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.squarespace.com/commerce-apis/making-requests": {
+      "url": "https://developers.squarespace.com/commerce-apis/making-requests",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.brightdata.com/api-reference/introduction": {
+      "url": "https://docs.brightdata.com/api-reference/introduction",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.consensus.app/reference/v1_quick_search": {
+      "url": "https://docs.consensus.app/reference/v1_quick_search",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://developers.squarespace.com/commerce-apis/overview": {
+      "url": "https://developers.squarespace.com/commerce-apis/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.squarespace.com/quick-start": {
+      "url": "https://developers.squarespace.com/quick-start",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.consensus.app/docs/mcp": {
+      "url": "https://docs.consensus.app/docs/mcp",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://docs.attio.com/rest-api/guides/rate-limiting": {
+      "url": "https://docs.attio.com/rest-api/guides/rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.squarespace.com/commerce-apis/rate-limits": {
+      "url": "https://developers.squarespace.com/commerce-apis/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.datadoghq.com/api/latest/rate-limits/": {
+      "url": "https://docs.datadoghq.com/api/latest/rate-limits/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.datadoghq.com/api/": {
+      "url": "https://docs.datadoghq.com/api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.datadoghq.com/bits_ai/mcp_server/": {
+      "url": "https://docs.datadoghq.com/bits_ai/mcp_server/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.datadoghq.com/api/latest/authentication/": {
+      "url": "https://docs.datadoghq.com/api/latest/authentication/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.discord.com/developers/events/gateway#privileged-intents": {
+      "url": "https://docs.discord.com/developers/events/gateway#privileged-intents",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.discord.com/developers/intro": {
+      "url": "https://docs.discord.com/developers/intro",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.smartsheet.com/guides/basics/getting-started": {
+      "url": "https://developers.smartsheet.com/guides/basics/getting-started",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.dataforseo.com/v3/appendix/user_data/": {
+      "url": "https://docs.dataforseo.com/v3/appendix/user_data/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.smartsheet.com/guides/basics/throttling-and-rate-limiting": {
+      "url": "https://developers.smartsheet.com/guides/basics/throttling-and-rate-limiting",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://developers.smartsheet.com/guides/basics/authentication": {
+      "url": "https://developers.smartsheet.com/guides/basics/authentication",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.ecwid.com/api-reference": {
+      "url": "https://docs.ecwid.com/api-reference",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.devin.ai/api-reference/overview": {
+      "url": "https://docs.devin.ai/api-reference/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.devin.ai/api-reference/authentication": {
+      "url": "https://docs.devin.ai/api-reference/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.discord.com/developers/platform/oauth2-and-permissions": {
+      "url": "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.discord.com/developers/quick-start/overview-of-apps": {
+      "url": "https://docs.discord.com/developers/quick-start/overview-of-apps",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.devin.ai/api-reference/v3/consumption/consumption-cycles": {
+      "url": "https://docs.devin.ai/api-reference/v3/consumption/consumption-cycles",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.firecrawl.dev/features/scrape": {
+      "url": "https://docs.firecrawl.dev/features/scrape",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10": {
+      "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid": {
+      "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api": {
+      "url": "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.discord.com/developers/topics/rate-limits": {
+      "url": "https://docs.discord.com/developers/topics/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.github.com/en/rest?apiVersion=2026-03-10": {
+      "url": "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ecwid.com/develop-apps/private-and-public-ecwid-apps": {
+      "url": "https://docs.ecwid.com/develop-apps/private-and-public-ecwid-apps",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://developers.intercom.com/docs/references/rest-api/": {
+      "url": "https://developers.intercom.com/docs/references/rest-api/",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.dataforseo.com/v3/introduction/": {
+      "url": "https://docs.dataforseo.com/v3/introduction/",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.higgsfield.ai/docs/how-to/introduction": {
+      "url": "https://docs.higgsfield.ai/docs/how-to/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.dataforseo.com/v3/authentication/": {
+      "url": "https://docs.dataforseo.com/v3/authentication/",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.discord.com/developers/reference": {
+      "url": "https://docs.discord.com/developers/reference",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.higgsfield.ai/docs": {
+      "url": "https://docs.higgsfield.ai/docs",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/#rate-limiting": {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/#rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/#authentication": {
+      "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/#authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.devin.ai": {
+      "url": "https://docs.devin.ai",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.helpscout.com/article/1140-mailbox-api#plan": {
+      "url": "https://docs.helpscout.com/article/1140-mailbox-api#plan",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.github.com/en/rest/about-the-rest-api/openapi-description?apiVersion=2026-03-10": {
+      "url": "https://docs.github.com/en/rest/about-the-rest-api/openapi-description?apiVersion=2026-03-10",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.mrscraper.com/docs/api/error-handling": {
+      "url": "https://docs.mrscraper.com/docs/api/error-handling",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.mrscraper.com/docs/getting-started/overview": {
+      "url": "https://docs.mrscraper.com/docs/getting-started/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ramp.com/developer-api/v1/authorization": {
+      "url": "https://docs.ramp.com/developer-api/v1/authorization",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ramp.com": {
+      "url": "https://docs.ramp.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ramp.com/developer-api/v1/rate-limiting": {
+      "url": "https://docs.ramp.com/developer-api/v1/rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ramp.com/developer-api/v1/introduction": {
+      "url": "https://docs.ramp.com/developer-api/v1/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ramp.com/developer-api/v1/sandbox": {
+      "url": "https://docs.ramp.com/developer-api/v1/sandbox",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.ramp.com/developer-api/v1/mcp": {
+      "url": "https://docs.ramp.com/developer-api/v1/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.reducto.ai/overview": {
+      "url": "https://docs.reducto.ai/overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.mrscraper.com/api-reference/authentication": {
+      "url": "https://docs.mrscraper.com/api-reference/authentication",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.reducto.ai/quickstart": {
+      "url": "https://docs.reducto.ai/quickstart",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.mrscraper.com/api-reference/introduction": {
+      "url": "https://docs.mrscraper.com/api-reference/introduction",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.reducto.ai/mcp-server": {
+      "url": "https://docs.reducto.ai/mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.sentry.io/api/auth/": {
+      "url": "https://docs.sentry.io/api/auth/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.netlify.com/api/get-started/": {
+      "url": "https://docs.netlify.com/api/get-started/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.sentry.io/api": {
+      "url": "https://docs.sentry.io/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.brightdata.com/general/account/api-token": {
+      "url": "https://docs.brightdata.com/general/account/api-token",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api": {
+      "url": "https://docs.github.com/en/rest/about-the-rest-api/comparing-githubs-rest-api-and-graphql-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.mrscraper.com/docs/billing/billing": {
+      "url": "https://docs.mrscraper.com/docs/billing/billing",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.slack.dev/admins/": {
+      "url": "https://docs.slack.dev/admins/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.sentry.io/api/ratelimits/": {
+      "url": "https://docs.sentry.io/api/ratelimits/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.slack.dev/ai/slack-mcp-server/developing/": {
+      "url": "https://docs.slack.dev/ai/slack-mcp-server/developing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.slack.dev/apis/": {
+      "url": "https://docs.slack.dev/apis/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.slack.dev/authentication/": {
+      "url": "https://docs.slack.dev/authentication/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.snowflake.com/en/": {
+      "url": "https://docs.snowflake.com/en/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api": {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.snowflake.com/en/developer-guide/drivers": {
+      "url": "https://docs.snowflake.com/en/developer-guide/drivers",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.usepylon.com/pylon-docs/developer/api/authentication": {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.usepylon.com/pylon-docs/developer/api": {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.usepylon.com/pylon-docs/developer/api/api-reference": {
+      "url": "https://docs.usepylon.com/pylon-docs/developer/api/api-reference",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.stripe.com/get-started": {
+      "url": "https://docs.stripe.com/get-started",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.twenty.com/developers/extend/api": {
+      "url": "https://docs.twenty.com/developers/extend/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.sharefile.com/en-us/podio.html": {
+      "url": "https://docs.sharefile.com/en-us/podio.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.twenty.com/developers/introduction": {
+      "url": "https://docs.twenty.com/developers/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication": {
+      "url": "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.waterfall.io/v1/introduction": {
+      "url": "https://docs.waterfall.io/v1/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.waterfall.io/v1/authentication": {
+      "url": "https://docs.waterfall.io/v1/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://front.com/pricing": {
+      "url": "https://front.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.firecrawl.dev/advanced/rate-limits": {
+      "url": "https://docs.firecrawl.dev/advanced/rate-limits",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://freshdesk.com/pricing/": {
+      "url": "https://freshdesk.com/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/Asana": {
+      "url": "https://github.com/Asana",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.firecrawl.dev/mcp-server/introduction": {
+      "url": "https://docs.firecrawl.dev/mcp-server/introduction",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://docs.stripe.com/api": {
+      "url": "https://docs.stripe.com/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://firecrawl.dev": {
+      "url": "https://firecrawl.dev",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.stripe.com/rate-limits": {
+      "url": "https://docs.stripe.com/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/Vonage-Community/vonage-mcp-server-api-bindings": {
+      "url": "https://github.com/Vonage-Community/vonage-mcp-server-api-bindings",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/Vonage/vonage-mcp-server-documentation": {
+      "url": "https://github.com/Vonage/vonage-mcp-server-documentation",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/ShiftEngineering/mcp-close-server": {
+      "url": "https://github.com/ShiftEngineering/mcp-close-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/XeroAPI/xero-mcp-server": {
+      "url": "https://github.com/XeroAPI/xero-mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/amzn/selling-partner-api-models": {
+      "url": "https://github.com/amzn/selling-partner-api-models",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://docs.stripe.com/mcp": {
+      "url": "https://docs.stripe.com/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/ZeroPointRepo/youtube-mcp": {
+      "url": "https://github.com/ZeroPointRepo/youtube-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/aircall": {
+      "url": "https://github.com/aircall",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://fathom.video": {
+      "url": "https://fathom.video",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/ahrefs/ahrefs-mcp-server": {
+      "url": "https://github.com/ahrefs/ahrefs-mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/brex": {
+      "url": "https://github.com/brex",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/apify": {
+      "url": "https://github.com/apify",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/clay-run": {
+      "url": "https://github.com/clay-run",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/apify/apify-mcp-server": {
+      "url": "https://github.com/apify/apify-mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/brightdata/brightdata-mcp": {
+      "url": "https://github.com/brightdata/brightdata-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/clay-run/public-docs": {
+      "url": "https://github.com/clay-run/public-docs",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/cloudflare/mcp-server-cloudflare": {
+      "url": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/gorgias": {
+      "url": "https://github.com/gorgias",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/firecrawl/firecrawl-mcp-server": {
+      "url": "https://github.com/firecrawl/firecrawl-mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/getsentry/sentry-mcp": {
+      "url": "https://github.com/getsentry/sentry-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/mermaid-js/mermaid-cli": {
+      "url": "https://github.com/mermaid-js/mermaid-cli",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/helpscout/": {
+      "url": "https://github.com/helpscout/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/intercom/intercom-mcp-server": {
+      "url": "https://github.com/intercom/intercom-mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/modelcontextprotocol/servers/blob/main/ADDITIONAL.md": {
+      "url": "https://github.com/modelcontextprotocol/servers/blob/main/ADDITIONAL.md",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/modelcontextprotocol/servers": {
+      "url": "https://github.com/modelcontextprotocol/servers",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/modelcontextprotocol/servers/tree/main/src": {
+      "url": "https://github.com/modelcontextprotocol/servers/tree/main/src",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/modelcontextprotocol/servers/blob/main/README.md": {
+      "url": "https://github.com/modelcontextprotocol/servers/blob/main/README.md",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/search?q=Gladly+MCP+server&type=repositories": {
+      "url": "https://github.com/search?q=Gladly+MCP+server&type=repositories",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/mongodb-js/mongodb-mcp-server": {
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/plaid": {
+      "url": "https://github.com/plaid",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/netlify/netlify-mcp": {
+      "url": "https://github.com/netlify/netlify-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/pricing": {
+      "url": "https://github.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/sherlock-project/sherlock/discussions/2915": {
+      "url": "https://github.com/sherlock-project/sherlock/discussions/2915",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/search?q=org%3Aseranking+MCP&type=repositories": {
+      "url": "https://github.com/search?q=org%3Aseranking+MCP&type=repositories",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/search?q=org%3Amermaid-js+MCP&type=repositories": {
+      "url": "https://github.com/search?q=org%3Amermaid-js+MCP&type=repositories",
+      "status_code": 429,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://github.com/sendgrid": {
+      "url": "https://github.com/sendgrid",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/pinterest/pinterest-python-sdk/": {
+      "url": "https://github.com/pinterest/pinterest-python-sdk/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/sherlock-project/sherlock": {
+      "url": "https://github.com/sherlock-project/sherlock",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/ramp-public/ramp_mcp": {
+      "url": "https://github.com/ramp-public/ramp_mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://grain.com": {
+      "url": "https://grain.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/smartsheet-platform/smar-mcp": {
+      "url": "https://github.com/smartsheet-platform/smar-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://grain.com/pricing": {
+      "url": "https://grain.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/supabase-community/postgres-mcp": {
+      "url": "https://github.com/supabase-community/postgres-mcp",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://github.com/sherlock-project/sherlock/releases": {
+      "url": "https://github.com/sherlock-project/sherlock/releases",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://gumroad.com/pricing": {
+      "url": "https://gumroad.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://gumroad.com/api": {
+      "url": "https://gumroad.com/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://grain.com/release-notes": {
+      "url": "https://grain.com/release-notes",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.getharvest.com/api-v2/": {
+      "url": "https://help.getharvest.com/api-v2/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/tdlib/td": {
+      "url": "https://github.com/tdlib/td",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/supabase-community/supabase-mcp": {
+      "url": "https://github.com/supabase-community/supabase-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://github.com/twilio": {
+      "url": "https://github.com/twilio",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server": {
+      "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.close.com/docs/mcp-server": {
+      "url": "https://help.close.com/docs/mcp-server",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.getharvest.com/api-v2/introduction/overview/general/": {
+      "url": "https://help.getharvest.com/api-v2/introduction/overview/general/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.gladly.com/": {
+      "url": "https://help.gladly.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.getharvest.com/api-v2/introduction/overview/general/#rate-limiting": {
+      "url": "https://help.getharvest.com/api-v2/introduction/overview/general/#rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://higgsfield.ai/mcp": {
+      "url": "https://higgsfield.ai/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://higgsfield.ai/cli": {
+      "url": "https://higgsfield.ai/cli",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://gorgias.com/": {
+      "url": "https://gorgias.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API": {
+      "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.otter.ai/hc/en-us/sections/8114540071703-Product-updates": {
+      "url": "https://help.otter.ai/hc/en-us/sections/8114540071703-Product-updates",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://highlevel.stoplight.io/welcome": {
+      "url": "https://highlevel.stoplight.io/welcome",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-06": {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/increasing-access?view=li-lms-2026-06",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/": {
+      "url": "https://mailchimp.com/developer/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication?toc=%2Flinkedin%2Fmarketing%2Ftoc.json&bc=%2Flinkedin%2Fbreadcrumb%2Ftoc.json&view=li-lms-2026-06": {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication?toc=%2Flinkedin%2Fmarketing%2Ftoc.json&bc=%2Flinkedin%2Fbreadcrumb%2Ftoc.json&view=li-lms-2026-06",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/methods?toc=%2Flinkedin%2Fmarketing%2Ftoc.json&bc=%2Flinkedin%2Fbreadcrumb%2Ftoc.json&view=li-lms-2026-06": {
+      "url": "https://learn.microsoft.com/en-us/linkedin/shared/api-guide/concepts/methods?toc=%2Flinkedin%2Fmarketing%2Ftoc.json&bc=%2Flinkedin%2Fbreadcrumb%2Ftoc.json&view=li-lms-2026-06",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-06": {
+      "url": "https://learn.microsoft.com/en-us/linkedin/marketing/quick-start?view=li-lms-2026-06",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/marketing/docs/fundamentals/": {
+      "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.clickup.com/hc/en-us/articles/6303426254871-Rate-limits-for-the-API": {
+      "url": "https://help.clickup.com/hc/en-us/articles/6303426254871-Rate-limits-for-the-API",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://help.getharvest.com/api-v2/introduction/overview/authentication/": {
+      "url": "https://help.getharvest.com/api-v2/introduction/overview/authentication/",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/marketing/docs/fundamentals/#api-limits": {
+      "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/#api-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/marketing/docs/fundamentals/#connecting-to-the-api": {
+      "url": "https://mailchimp.com/developer/marketing/docs/fundamentals/#connecting-to-the-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.systeme.io/article/2329-how-to-use-systeme-io-public-api": {
+      "url": "https://help.systeme.io/article/2329-how-to-use-systeme-io-public-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp": {
+      "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://learn.microsoft.com/linkedin/marketing": {
+      "url": "https://learn.microsoft.com/linkedin/marketing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://intercom.com/": {
+      "url": "https://intercom.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/transactional/docs/fundamentals/": {
+      "url": "https://mailchimp.com/developer/transactional/docs/fundamentals/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/transactional/docs/fundamentals/#api-conventions": {
+      "url": "https://mailchimp.com/developer/transactional/docs/fundamentals/#api-conventions",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/transactional/docs/fundamentals/#account-features": {
+      "url": "https://mailchimp.com/developer/transactional/docs/fundamentals/#account-features",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://neo4j.com/docs/http-api/current/": {
+      "url": "https://neo4j.com/docs/http-api/current/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://linear.app/developers/rate-limiting": {
+      "url": "https://linear.app/developers/rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mailchimp.com/developer/transactional/": {
+      "url": "https://mailchimp.com/developer/transactional/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://neo4j.com/docs/create-applications/": {
+      "url": "https://neo4j.com/docs/create-applications/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://help.systeme.io/category/11216-model-context-protocol-mcp": {
+      "url": "https://help.systeme.io/category/11216-model-context-protocol-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://neo4j.com/docs/query-api/current/": {
+      "url": "https://neo4j.com/docs/query-api/current/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://mcp.sentry.dev/": {
+      "url": "https://mcp.sentry.dev/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide": {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/api-access-token/app-access-token-development-guide",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://open.larksuite.com/document/server-docs/getting-started/frequency-control": {
+      "url": "https://open.larksuite.com/document/server-docs/getting-started/frequency-control",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://neo4j.com/pricing/": {
+      "url": "https://neo4j.com/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pipedrive.readme.io/docs/core-api-concepts-authentication": {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://open.larksuite.com/document/home/index": {
+      "url": "https://open.larksuite.com/document/home/index",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://notebooklm.google/plans": {
+      "url": "https://notebooklm.google/plans",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://notebooklm.google/": {
+      "url": "https://notebooklm.google/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pitchbook.com/products/direct-access-data": {
+      "url": "https://pitchbook.com/products/direct-access-data",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://open.larksuite.com/changelog": {
+      "url": "https://open.larksuite.com/changelog",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pitchbook.com/products/direct-access-data/api": {
+      "url": "https://pitchbook.com/products/direct-access-data/api",
+      "status_code": 403,
+      "verdict": "blocked",
+      "error": ""
+    },
+    "https://open.larksuite.com/": {
+      "url": "https://open.larksuite.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://linear.app/developers/graphql": {
+      "url": "https://linear.app/developers/graphql",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pitchbook.com/products": {
+      "url": "https://pitchbook.com/products",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pitchbook.com/": {
+      "url": "https://pitchbook.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://neo4j.com/docs/mcp/current/": {
+      "url": "https://neo4j.com/docs/mcp/current/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://plain.com": {
+      "url": "https://plain.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://plain.com/pricing": {
+      "url": "https://plain.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pipedrive.readme.io/docs/getting-started": {
+      "url": "https://pipedrive.readme.io/docs/getting-started",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://neo4j.com/docs/query-api/current/authentication-authorization/": {
+      "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://otter.ai/pricing": {
+      "url": "https://otter.ai/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting": {
+      "url": "https://pipedrive.readme.io/docs/core-api-concepts-rate-limiting",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://podio.com/": {
+      "url": "https://podio.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://plaid.com/docs/api/": {
+      "url": "https://plaid.com/docs/api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://plaid.com/docs/errors/rate-limit-exceeded/": {
+      "url": "https://plaid.com/docs/errors/rate-limit-exceeded/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://plaid.com/pricing/": {
+      "url": "https://plaid.com/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pumble.com/": {
+      "url": "https://pumble.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/": {
+      "url": "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://seranking.com/api-pricing.html": {
+      "url": "https://seranking.com/api-pricing.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://plaid.com/docs": {
+      "url": "https://plaid.com/docs",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://ramp.com/pricing": {
+      "url": "https://ramp.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://sentry.io/pricing/": {
+      "url": "https://sentry.io/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pumble.com/pricing": {
+      "url": "https://pumble.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/": {
+      "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://seranking.com/api/integrations/mcp/": {
+      "url": "https://seranking.com/api/integrations/mcp/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://seranking.com/whats-new.html": {
+      "url": "https://seranking.com/whats-new.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://seranking.com/api/rate-limits/": {
+      "url": "https://seranking.com/api/rate-limits/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://seranking.com/api/how-to-get-api/": {
+      "url": "https://seranking.com/api/how-to-get-api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://shopify.dev/docs/api/admin-graphql/latest#rate-limits": {
+      "url": "https://shopify.dev/docs/api/admin-graphql/latest#rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://shopify.dev/docs/apps/build/authentication-authorization": {
+      "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://reducto.ai/pricing": {
+      "url": "https://reducto.ai/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://registry.modelcontextprotocol.io/?q=Zoho": {
+      "url": "https://registry.modelcontextprotocol.io/?q=Zoho",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://supabase.com/": {
+      "url": "https://supabase.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://shopify.dev/docs/apps/build": {
+      "url": "https://shopify.dev/docs/apps/build",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://shopify.dev/docs/apps/build/storefront-mcp#mcp-servers": {
+      "url": "https://shopify.dev/docs/apps/build/storefront-mcp#mcp-servers",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://reducto.ai/": {
+      "url": "https://reducto.ai/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://supabase.com/docs/guides/api": {
+      "url": "https://supabase.com/docs/guides/api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://supabase.com/docs/guides/api/securing-your-api": {
+      "url": "https://supabase.com/docs/guides/api/securing-your-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://shopify.dev/docs/api/usage/limits#rate-limits": {
+      "url": "https://shopify.dev/docs/api/usage/limits#rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://supabase.com/docs/guides/getting-started/api-keys": {
+      "url": "https://supabase.com/docs/guides/getting-started/api-keys",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://supabase.com/docs": {
+      "url": "https://supabase.com/docs",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://supabase.com/pricing": {
+      "url": "https://supabase.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://studio.apollographql.com/public/Linear-API/schema/reference?variant=current": {
+      "url": "https://studio.apollographql.com/public/Linear-API/schema/reference?variant=current",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://supabase.com/docs/guides/getting-started/mcp": {
+      "url": "https://supabase.com/docs/guides/getting-started/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://seranking.com/api": {
+      "url": "https://seranking.com/api",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy": {
+      "url": "https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://systeme.io/": {
+      "url": "https://systeme.io/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://systeme.io/pricing": {
+      "url": "https://systeme.io/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://support.grain.com/en/": {
+      "url": "https://support.grain.com/en/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://support.grain.com/en/articles/14811968-grain-mcp": {
+      "url": "https://support.grain.com/en/articles/14811968-grain-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://transcriptapi.com/contact": {
+      "url": "https://transcriptapi.com/contact",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://twenty.com": {
+      "url": "https://twenty.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://transcriptapi.com/#pricing": {
+      "url": "https://transcriptapi.com/#pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://transcriptapi.com/docs/api/": {
+      "url": "https://transcriptapi.com/docs/api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://transcriptapi.com/docs/llms-full.txt": {
+      "url": "https://transcriptapi.com/docs/llms-full.txt",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://twenty.com/pricing": {
+      "url": "https://twenty.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://transcriptapi.com/docs/mcp/": {
+      "url": "https://transcriptapi.com/docs/mcp/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://university.clay.com/docs/using-clay-as-an-api": {
+      "url": "https://university.clay.com/docs/using-clay-as-an-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://support.liveagent.com/": {
+      "url": "https://support.liveagent.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://sherlockproject.xyz/": {
+      "url": "https://sherlockproject.xyz/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://vercel.com/docs/limits#rate-limits": {
+      "url": "https://vercel.com/docs/limits#rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://vercel.com/docs/agent-resources/vercel-mcp": {
+      "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/use-atlassian-rovo-mcp-server/": {
+      "url": "https://support.atlassian.com/atlassian-rovo-mcp-server/docs/use-atlassian-rovo-mcp-server/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://vercel.com/docs/mcp": {
+      "url": "https://vercel.com/docs/mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://transcriptapi.com/docs": {
+      "url": "https://transcriptapi.com/docs",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://smartsheet.redoc.ly/": {
+      "url": "https://smartsheet.redoc.ly/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://vercel.com/docs/integrations": {
+      "url": "https://vercel.com/docs/integrations",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.binance.com/en/binance-api": {
+      "url": "https://www.binance.com/en/binance-api",
+      "status_code": 202,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://sherlockproject.xyz/llms.txt": {
+      "url": "https://sherlockproject.xyz/llms.txt",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://sherlockproject.xyz/usage.md": {
+      "url": "https://sherlockproject.xyz/usage.md",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.fathom.ai/": {
+      "url": "https://www.fathom.ai/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.fathom.ai/pricing": {
+      "url": "https://www.fathom.ai/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://woocommerce.github.io/woocommerce-rest-api-docs/": {
+      "url": "https://woocommerce.github.io/woocommerce-rest-api-docs/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.datadoghq.com/product/ai/mcp-server/": {
+      "url": "https://www.datadoghq.com/product/ai/mcp-server/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.freshworks.com/freshdesk/pricing/": {
+      "url": "https://www.freshworks.com/freshdesk/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.datadoghq.com/pricing/": {
+      "url": "https://www.datadoghq.com/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://woocommerce.com/document/woocommerce-rest-api": {
+      "url": "https://woocommerce.com/document/woocommerce-rest-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.brex.com/pricing": {
+      "url": "https://www.brex.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.gorgias.com/pricing": {
+      "url": "https://www.gorgias.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.gohighlevel.com/": {
+      "url": "https://www.gohighlevel.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://vercel.com/docs/rest-api": {
+      "url": "https://vercel.com/docs/rest-api",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.firecrawl.dev/pricing": {
+      "url": "https://www.firecrawl.dev/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://smithery.ai/server/youtube-mcp": {
+      "url": "https://smithery.ai/server/youtube-mcp",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://vercel.com/docs/rest-api#authentication": {
+      "url": "https://vercel.com/docs/rest-api#authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.fanbasis.com/enterprises": {
+      "url": "https://www.fanbasis.com/enterprises",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.getharvest.com/pricing": {
+      "url": "https://www.getharvest.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://woocommerce.com/start/": {
+      "url": "https://woocommerce.com/start/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.liveagent.com/": {
+      "url": "https://www.liveagent.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.fanbasis.com/": {
+      "url": "https://www.fanbasis.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.liveagent.com/pricing/": {
+      "url": "https://www.liveagent.com/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.larksuite.com/en_us/plans": {
+      "url": "https://www.larksuite.com/en_us/plans",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.copper.com/pricing": {
+      "url": "https://www.copper.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.larksuite.com/en_sg/": {
+      "url": "https://www.larksuite.com/en_sg/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.gladly.ai/": {
+      "url": "https://www.gladly.ai/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.nmi.com/": {
+      "url": "https://www.nmi.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account#std-label-atlas-admin-api-access": {
+      "url": "https://www.mongodb.com/docs/atlas/configure-api-access/?interface=atlas-ui&programmatic-access=service-account#std-label-atlas-admin-api-access",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.intercom.com/pricing": {
+      "url": "https://www.intercom.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/docs/atlas/api/api-authentication/": {
+      "url": "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/docs/atlas/api/": {
+      "url": "https://www.mongodb.com/docs/atlas/api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/docs/mcp-server/": {
+      "url": "https://www.mongodb.com/docs/mcp-server/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.netlify.com/pricing/": {
+      "url": "https://www.netlify.com/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/docs/mongodb-vscode/mcp-server/": {
+      "url": "https://www.mongodb.com/docs/mongodb-vscode/mcp-server/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/docs/atlas/api/atlas-admin-api/": {
+      "url": "https://www.mongodb.com/docs/atlas/api/atlas-admin-api/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/docs/atlas/api/api-rate-limit/": {
+      "url": "https://www.mongodb.com/docs/atlas/api/api-rate-limit/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.notion.com/pricing": {
+      "url": "https://www.notion.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.plain.com/docs/graphql/authentication": {
+      "url": "https://www.plain.com/docs/graphql/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.plain.com/docs/graphql/introduction": {
+      "url": "https://www.plain.com/docs/graphql/introduction",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://smartsheet.com/developers": {
+      "url": "https://smartsheet.com/developers",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.mongodb.com/pricing": {
+      "url": "https://www.mongodb.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.paygent.biz": {
+      "url": "https://www.paygent.biz",
+      "status_code": null,
+      "verdict": "dead",
+      "error": "ConnectionError: HTTPSConnectionPool(host='www.paygent.biz', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='www.paygent.biz', port=443): Failed to resolve 'www.paygent.biz' ([Errno 8] nodename nor servname provided, or not known)\"))"
+    },
+    "https://www.twilio.com": {
+      "url": "https://www.twilio.com",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/docs/sendgrid/api-reference": {
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.plain.com/docs/agents": {
+      "url": "https://www.plain.com/docs/agents",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.salesforce.com/products/free-trial/developer/": {
+      "url": "https://www.salesforce.com/products/free-trial/developer/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.plain.com/docs/graphql/attachments#limitations": {
+      "url": "https://www.plain.com/docs/graphql/attachments#limitations",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.npmjs.com/package/@mermaid-js/mermaid-cli": {
+      "url": "https://www.npmjs.com/package/@mermaid-js/mermaid-cli",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/docs": {
+      "url": "https://www.twilio.com/docs",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication": {
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.progress.com/podio/pricing": {
+      "url": "https://www.progress.com/podio/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.squarespace.com/pricing": {
+      "url": "https://www.squarespace.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.hubspot.com/pricing/api-limits": {
+      "url": "https://www.hubspot.com/pricing/api-limits",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://www.usepylon.com/pricing": {
+      "url": "https://www.usepylon.com/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/docs/bulk-messaging/getting-started#authenticate-your-requests": {
+      "url": "https://www.twilio.com/docs/bulk-messaging/getting-started#authenticate-your-requests",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.waterfall.io/": {
+      "url": "https://www.waterfall.io/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.usepylon.com/": {
+      "url": "https://www.usepylon.com/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/en-us/verify/pricing": {
+      "url": "https://www.twilio.com/en-us/verify/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/cliq/help/restapi/v2/errors/#overview": {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/errors/#overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/cliq/": {
+      "url": "https://www.zoho.com/cliq/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits": {
+      "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/cliq/help/restapi/": {
+      "url": "https://www.zoho.com/cliq/help/restapi/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/cliq/pricing.html?src=cliq-header": {
+      "url": "https://www.zoho.com/cliq/pricing.html?src=cliq-header",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/cliq/help/restapi/v2/introduction/#overview": {
+      "url": "https://www.zoho.com/cliq/help/restapi/v2/introduction/#overview",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/docs/verify/api/rate-limits-and-timeouts": {
+      "url": "https://www.twilio.com/docs/verify/api/rate-limits-and-timeouts",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/crm/developer/docs/api/v6/": {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v6/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/crm": {
+      "url": "https://www.zoho.com/crm",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/crm/developer/docs/api/v6/api-limits.html": {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v6/api-limits.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zoho.com/crm/developer/docs/api/v6/oauth-overview.html": {
+      "url": "https://www.zoho.com/crm/developer/docs/api/v6/oauth-overview.html",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.vonage.com/communications-apis/pricing/": {
+      "url": "https://www.vonage.com/communications-apis/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zendesk.com/pricing/": {
+      "url": "https://www.zendesk.com/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/en-us/pricing": {
+      "url": "https://www.twilio.com/en-us/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.salesforce.com/platform/enterprise-app-development/pricing/": {
+      "url": "https://www.salesforce.com/platform/enterprise-app-development/pricing/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.snowflake.com/en/pricing/": {
+      "url": "https://www.snowflake.com/en/pricing/",
+      "status_code": 404,
+      "verdict": "dead",
+      "error": ""
+    },
+    "https://www.ipayx.ai/developers": {
+      "url": "https://www.ipayx.ai/developers",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.ipayx.ai/pricing": {
+      "url": "https://www.ipayx.ai/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.zendesk.com/register/": {
+      "url": "https://www.zendesk.com/register/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.twilio.com/en-us/products/email-api/pricing": {
+      "url": "https://www.twilio.com/en-us/products/email-api/pricing",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://www.snowflake.com/en/pricing-options/": {
+      "url": "https://www.snowflake.com/en/pricing-options/",
+      "status_code": 200,
+      "verdict": "ok",
+      "error": ""
+    },
+    "https://glama.ai/mcp/servers/67vqrk6f6m": {
+      "url": "https://glama.ai/mcp/servers/67vqrk6f6m",
+      "status_code": null,
+      "verdict": "dead",
+      "error": "ReadTimeout: HTTPSConnectionPool(host='glama.ai', port=443): Read timed out. (read timeout=10)"
+    }
+  }
+}

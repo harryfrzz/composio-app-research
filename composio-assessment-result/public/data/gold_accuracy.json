@@ -1,0 +1,509 @@
+{
+  "gold_size": 8,
+  "methodology": "Fields read by hand from official docs (see data/gold_standard.json sources). auth_methods scored as an exact set, api_surface.type scored exactly; these two form objective_accuracy. access_tier reported separately as a documented judgment call.",
+  "objective_accuracy": {
+    "pass1": 0.5625,
+    "pass2": 0.75
+  },
+  "auth_methods_accuracy": {
+    "pass1": 0.375,
+    "pass2": 0.75
+  },
+  "api_type_accuracy": {
+    "pass1": 0.75,
+    "pass2": 0.75
+  },
+  "access_tier_accuracy": {
+    "pass1": 0.75,
+    "pass2": 0.75
+  },
+  "pass1_rows": [
+    {
+      "id": 81,
+      "app": "Stripe",
+      "field": "auth_methods",
+      "agent": [
+        "api_key"
+      ],
+      "gold": [
+        "api_key",
+        "basic"
+      ],
+      "correct": false
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "field": "api_surface_type",
+      "agent": "REST",
+      "gold": "REST",
+      "correct": true
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token"
+      ],
+      "gold": [
+        "oauth2",
+        "token",
+        "basic"
+      ],
+      "correct": false
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "Both",
+      "correct": true
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token"
+      ],
+      "gold": [
+        "oauth2",
+        "token"
+      ],
+      "correct": true
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "field": "api_surface_type",
+      "agent": "REST",
+      "gold": "REST",
+      "correct": true
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token"
+      ],
+      "gold": [
+        "oauth2",
+        "token"
+      ],
+      "correct": true
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "field": "api_surface_type",
+      "agent": "REST",
+      "gold": "REST",
+      "correct": true
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "api_key",
+        "basic"
+      ],
+      "gold": [
+        "oauth2",
+        "token",
+        "basic"
+      ],
+      "correct": false
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "REST",
+      "correct": false
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "field": "access_tier",
+      "agent": "paid_plan_required",
+      "gold": "self_serve_trial",
+      "correct": false
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "other"
+      ],
+      "gold": [
+        "oauth2",
+        "other"
+      ],
+      "correct": true
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "REST",
+      "correct": false
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "field": "access_tier",
+      "agent": "admin_approval_required",
+      "gold": "admin_approval_required",
+      "correct": true
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "api_key",
+        "token",
+        "other"
+      ],
+      "gold": [
+        "oauth2",
+        "token"
+      ],
+      "correct": false
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "Both",
+      "correct": true
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token",
+        "other"
+      ],
+      "gold": [
+        "oauth2"
+      ],
+      "correct": false
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "Both",
+      "correct": true
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "field": "access_tier",
+      "agent": "paid_plan_required",
+      "gold": "self_serve_free",
+      "correct": false
+    }
+  ],
+  "pass2_rows": [
+    {
+      "id": 81,
+      "app": "Stripe",
+      "field": "auth_methods",
+      "agent": [
+        "token",
+        "basic"
+      ],
+      "gold": [
+        "api_key",
+        "basic"
+      ],
+      "correct": false
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "field": "api_surface_type",
+      "agent": "REST",
+      "gold": "REST",
+      "correct": true
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token"
+      ],
+      "gold": [
+        "oauth2",
+        "token",
+        "basic"
+      ],
+      "correct": false
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "Both",
+      "correct": true
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token"
+      ],
+      "gold": [
+        "oauth2",
+        "token"
+      ],
+      "correct": true
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "field": "api_surface_type",
+      "agent": "REST",
+      "gold": "REST",
+      "correct": true
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token"
+      ],
+      "gold": [
+        "oauth2",
+        "token"
+      ],
+      "correct": true
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "field": "api_surface_type",
+      "agent": "REST",
+      "gold": "REST",
+      "correct": true
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token",
+        "basic"
+      ],
+      "gold": [
+        "oauth2",
+        "token",
+        "basic"
+      ],
+      "correct": true
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "REST",
+      "correct": false
+    },
+    {
+      "id": 11,
+      "app": "Zendesk",
+      "field": "access_tier",
+      "agent": "paid_plan_required",
+      "gold": "self_serve_trial",
+      "correct": false
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "other"
+      ],
+      "gold": [
+        "oauth2",
+        "other"
+      ],
+      "correct": true
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "field": "api_surface_type",
+      "agent": "REST",
+      "gold": "REST",
+      "correct": true
+    },
+    {
+      "id": 31,
+      "app": "Google Ads",
+      "field": "access_tier",
+      "agent": "admin_approval_required",
+      "gold": "admin_approval_required",
+      "correct": true
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2",
+        "token"
+      ],
+      "gold": [
+        "oauth2",
+        "token"
+      ],
+      "correct": true
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "field": "api_surface_type",
+      "agent": "GraphQL",
+      "gold": "Both",
+      "correct": false
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "field": "access_tier",
+      "agent": "self_serve_free",
+      "gold": "self_serve_free",
+      "correct": true
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "field": "auth_methods",
+      "agent": [
+        "oauth2"
+      ],
+      "gold": [
+        "oauth2"
+      ],
+      "correct": true
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "field": "api_surface_type",
+      "agent": "Both",
+      "gold": "Both",
+      "correct": true
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "field": "access_tier",
+      "agent": "paid_plan_required",
+      "gold": "self_serve_free",
+      "correct": false
+    }
+  ]
+}

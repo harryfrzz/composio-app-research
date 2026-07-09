@@ -1,0 +1,157 @@
+{
+  "pass1_accuracy": 0.3187,
+  "pass2_accuracy": 0.3531,
+  "per_field_accuracy": {
+    "pass1": {
+      "access_tier": 0.5,
+      "api_surface.breadth": 0.0,
+      "api_surface.mcp_exists": 0.75,
+      "api_surface.mcp_notes": 0.05,
+      "api_surface.type": 0.8,
+      "auth_methods": 0.35,
+      "auth_notes": 0.1,
+      "blocker": 0.35,
+      "buildability_verdict": 0.6,
+      "description": 0.0,
+      "evidence_urls": 0.95,
+      "gating_reason": 0.05,
+      "human_review_reason": 0.0,
+      "needs_human_review": 0.55,
+      "notable_signals": 0.0,
+      "rate_limit_notes": 0.05
+    },
+    "pass2": {
+      "access_tier": 0.5,
+      "api_surface.breadth": 0.1,
+      "api_surface.mcp_exists": 0.65,
+      "api_surface.mcp_notes": 0.1,
+      "api_surface.type": 0.8,
+      "auth_methods": 0.4,
+      "auth_notes": 0.1,
+      "blocker": 0.4,
+      "buildability_verdict": 0.7,
+      "description": 0.2,
+      "evidence_urls": 0.95,
+      "gating_reason": 0.0,
+      "human_review_reason": 0.15,
+      "needs_human_review": 0.5,
+      "notable_signals": 0.0,
+      "rate_limit_notes": 0.1
+    }
+  },
+  "field_class_accuracy": {
+    "pass1": {
+      "structured_decision": 0.6062,
+      "advisory_free_text": 0.0312
+    },
+    "pass2": {
+      "structured_decision": 0.6125,
+      "advisory_free_text": 0.0938
+    }
+  },
+  "metric_notes": "Overall accuracy scores all 16 fields equally; 8 are advisory free-text compared by 0.35 token-overlap, a bar two independent writers rarely clear, which deflates the headline. field_class_accuracy.structured_decision reflects the enum/list/bool fields that drive the buildability call. Ground truth is a nondeterministic source-grounded LLM verifier, so overall deltas within roughly 1-2 points are within oracle noise rather than real movement.",
+  "sample_size": 20,
+  "sample_app_ids": [
+    10,
+    84,
+    85,
+    90,
+    59,
+    97,
+    94,
+    95,
+    54,
+    50,
+    91,
+    1,
+    21,
+    51,
+    61,
+    41,
+    81,
+    31,
+    71,
+    11
+  ],
+  "sample_apps": [
+    "DealCloud",
+    "Paygent Connect",
+    "iPayX",
+    "PitchBook",
+    "Waterfall.io",
+    "higgsfield",
+    "Consensus",
+    "Reducto",
+    "MrScraper",
+    "fanbasis",
+    "NotebookLM",
+    "Salesforce",
+    "Slack",
+    "DataForSEO",
+    "GitHub",
+    "Shopify",
+    "Stripe",
+    "Google Ads",
+    "Notion",
+    "Zendesk"
+  ],
+  "skipped_app_ids": [],
+  "methodology": {
+    "pass1": "Composio-tool research agent output.",
+    "verification": "Independent direct HTTP fetch of hint/evidence URLs, then a source-grounded LLM verifier without Composio tools.",
+    "pass2": "agent_rerun_pass2_file",
+    "comparison": "Enums/lists/bools compare exactly after normalization; free-text fields use token-overlap tolerance; evidence URLs compare by overlapping host."
+  },
+  "common_failure_modes": [
+    {
+      "mode": "field_interpretation_mismatch",
+      "count": 127,
+      "examples": [
+        "DealCloud:description",
+        "DealCloud:auth_methods",
+        "DealCloud:auth_notes",
+        "DealCloud:api_surface.breadth",
+        "DealCloud:api_surface.mcp_notes"
+      ]
+    },
+    {
+      "mode": "evidence_url_http_error",
+      "count": 48,
+      "examples": [
+        "PitchBook:description",
+        "PitchBook:auth_methods",
+        "PitchBook:auth_notes",
+        "PitchBook:gating_reason",
+        "PitchBook:api_surface.breadth"
+      ]
+    },
+    {
+      "mode": "ambiguous_gating_language",
+      "count": 29,
+      "examples": [
+        "DealCloud:gating_reason",
+        "DealCloud:blocker",
+        "Paygent Connect:access_tier",
+        "Paygent Connect:gating_reason",
+        "Paygent Connect:blocker"
+      ]
+    },
+    {
+      "mode": "thin_or_js_rendered_docs",
+      "count": 14,
+      "examples": [
+        "iPayX:description",
+        "iPayX:auth_methods",
+        "iPayX:auth_notes",
+        "iPayX:access_tier",
+        "iPayX:gating_reason"
+      ]
+    }
+  ],
+  "recommended_agent_fixes": [
+    "Prefer official docs/auth/pricing URLs over search snippets.",
+    "Treat HTTP errors, short fetched text, and JS-rendered docs as human-review triggers.",
+    "For gating/access fields, require explicit pricing, trial, admin, or partner-language evidence.",
+    "Do not count an evidence URL as valid unless the fetched page text supports the field."
+  ]
+}

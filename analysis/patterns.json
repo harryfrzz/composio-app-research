@@ -1,0 +1,1155 @@
+{
+  "total_apps": 100,
+  "auth_method_distribution": {
+    "overall": {
+      "oauth2": 65,
+      "token": 65,
+      "other": 26,
+      "api_key": 16,
+      "basic": 14
+    },
+    "by_category": {
+      "AI, Research and Media-native": {
+        "oauth2": 5,
+        "token": 5,
+        "api_key": 4,
+        "other": 3
+      },
+      "CRM and Sales": {
+        "oauth2": 10,
+        "token": 6,
+        "other": 2,
+        "basic": 1
+      },
+      "Communications and Messaging": {
+        "oauth2": 6,
+        "token": 6,
+        "api_key": 2,
+        "basic": 2,
+        "other": 2
+      },
+      "Data, SEO and Scraping": {
+        "token": 6,
+        "api_key": 2,
+        "basic": 2,
+        "other": 2
+      },
+      "Developer, Infra and Data platforms": {
+        "token": 8,
+        "oauth2": 7,
+        "other": 4,
+        "api_key": 2,
+        "basic": 2
+      },
+      "Ecommerce": {
+        "oauth2": 8,
+        "token": 7,
+        "other": 5,
+        "basic": 1
+      },
+      "Finance and Fintech": {
+        "oauth2": 4,
+        "token": 4,
+        "api_key": 3,
+        "other": 3,
+        "basic": 2
+      },
+      "Marketing, Ads, Email and Social": {
+        "oauth2": 8,
+        "token": 5,
+        "other": 3,
+        "api_key": 2
+      },
+      "Productivity and Project Management": {
+        "oauth2": 10,
+        "token": 10,
+        "basic": 1,
+        "other": 1
+      },
+      "Support and Helpdesk": {
+        "token": 8,
+        "oauth2": 7,
+        "basic": 3,
+        "api_key": 1,
+        "other": 1
+      }
+    }
+  },
+  "access_tier_distribution": {
+    "overall": {
+      "self_serve_free": 56,
+      "paid_plan_required": 20,
+      "admin_approval_required": 12,
+      "self_serve_trial": 7,
+      "partner_gated_contact_sales": 5
+    },
+    "by_category": {
+      "AI, Research and Media-native": {
+        "self_serve_free": 6,
+        "paid_plan_required": 3,
+        "admin_approval_required": 1
+      },
+      "CRM and Sales": {
+        "self_serve_free": 4,
+        "paid_plan_required": 3,
+        "self_serve_trial": 2,
+        "admin_approval_required": 1
+      },
+      "Communications and Messaging": {
+        "self_serve_free": 8,
+        "admin_approval_required": 1,
+        "paid_plan_required": 1
+      },
+      "Data, SEO and Scraping": {
+        "self_serve_free": 6,
+        "paid_plan_required": 2,
+        "partner_gated_contact_sales": 1,
+        "self_serve_trial": 1
+      },
+      "Developer, Infra and Data platforms": {
+        "self_serve_free": 9,
+        "self_serve_trial": 1
+      },
+      "Ecommerce": {
+        "self_serve_free": 5,
+        "admin_approval_required": 2,
+        "paid_plan_required": 2,
+        "partner_gated_contact_sales": 1
+      },
+      "Finance and Fintech": {
+        "self_serve_free": 5,
+        "admin_approval_required": 2,
+        "partner_gated_contact_sales": 2,
+        "paid_plan_required": 1
+      },
+      "Marketing, Ads, Email and Social": {
+        "admin_approval_required": 5,
+        "self_serve_free": 4,
+        "paid_plan_required": 1
+      },
+      "Productivity and Project Management": {
+        "self_serve_free": 8,
+        "paid_plan_required": 2
+      },
+      "Support and Helpdesk": {
+        "paid_plan_required": 5,
+        "self_serve_trial": 3,
+        "partner_gated_contact_sales": 1,
+        "self_serve_free": 1
+      }
+    }
+  },
+  "buildability_distribution": {
+    "ready_today": 52,
+    "ready_with_workaround": 41,
+    "blocked": 7
+  },
+  "human_review_distribution": {
+    "needs_review": 68,
+    "agent_verified": 32
+  },
+  "top_blockers": [
+    {
+      "blocker": "paid plan required",
+      "count": 18,
+      "example_apps": [
+        "Pipedrive",
+        "Freshdesk",
+        "Pylon",
+        "Plain",
+        "Help Scout"
+      ]
+    },
+    {
+      "blocker": "auth/access setup ambiguity",
+      "count": 13,
+      "example_apps": [
+        "LiveAgent",
+        "Lark (Larksuite)",
+        "Google Ads",
+        "systeme.io",
+        "Magento (Adobe Commerce)"
+      ]
+    },
+    {
+      "blocker": "partner/contact-sales or approval gate",
+      "count": 12,
+      "example_apps": [
+        "Salesforce",
+        "Copper",
+        "Gladly",
+        "LinkedIn Ads",
+        "Meta Ads"
+      ]
+    }
+  ],
+  "easy_wins": [
+    {
+      "id": 93,
+      "app": "Fathom",
+      "category": "AI, Research and Media-native",
+      "auth_methods": [
+        "api_key",
+        "oauth2"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.fathom.ai/",
+        "https://developers.fathom.ai/",
+        "https://developers.fathom.ai/api-overview",
+        "https://developers.fathom.ai/mcp",
+        "https://fathom.video/pricing"
+      ]
+    },
+    {
+      "id": 95,
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "auth_methods": [
+        "api_key",
+        "token",
+        "other"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://reducto.ai/pricing",
+        "https://docs.reducto.ai/api-reference/parse",
+        "https://docs.reducto.ai/quickstart",
+        "https://docs.reducto.ai/reference/rate-limits",
+        "https://docs.reducto.ai/mcp-server",
+        "https://github.com/reductoai/mcp-server-reducto"
+      ]
+    },
+    {
+      "id": 99,
+      "app": "YouTube Transcript",
+      "category": "AI, Research and Media-native",
+      "auth_methods": [
+        "token",
+        "oauth2",
+        "api_key"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://transcriptapi.com/",
+        "https://transcriptapi.com/docs/api/",
+        "https://transcriptapi.com/docs/mcp/",
+        "https://transcriptapi.com/#pricing"
+      ]
+    },
+    {
+      "id": 4,
+      "app": "Attio",
+      "category": "CRM and Sales",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://attio.com/",
+        "https://attio.com/pricing",
+        "https://docs.attio.com/rest-api/guides/authentication",
+        "https://docs.attio.com/rest-api/guides/rate-limiting",
+        "https://docs.attio.com/mcp/overview"
+      ]
+    },
+    {
+      "id": 8,
+      "app": "Close",
+      "category": "CRM and Sales",
+      "auth_methods": [
+        "oauth2",
+        "basic"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://close.com/",
+        "https://developer.close.com/api/overview",
+        "https://developer.close.com/api/overview/api-key-authentication",
+        "https://developer.close.com/api/overview/oauth-authentication",
+        "https://developer.close.com/api/overview/rate-limits",
+        "https://close.com/pricing",
+        "https://developer.close.com/mcp"
+      ]
+    },
+    {
+      "id": 2,
+      "app": "HubSpot",
+      "category": "CRM and Sales",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.hubspot.com/",
+        "https://developers.hubspot.com/docs/api-reference/overview",
+        "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines",
+        "https://developers.hubspot.com/docs/developer-tooling/local-development/developer-mcp/setup"
+      ]
+    },
+    {
+      "id": 6,
+      "app": "Podio",
+      "category": "CRM and Sales",
+      "auth_methods": [
+        "oauth2",
+        "other"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://podio.com/",
+        "https://developers.podio.com/authentication",
+        "https://developers.podio.com/index/api",
+        "https://developers.podio.com/index/limits",
+        "https://www.progress.com/podio/pricing"
+      ]
+    },
+    {
+      "id": 5,
+      "app": "Twenty",
+      "category": "CRM and Sales",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "Both",
+      "evidence_urls": [
+        "https://twenty.com/",
+        "https://twenty.com/pricing",
+        "https://docs.twenty.com/developers/introduction",
+        "https://docs.twenty.com/developers/extend/api",
+        "https://docs.twenty.com/developers/extend/oauth"
+      ]
+    },
+    {
+      "id": 7,
+      "app": "Zoho CRM",
+      "category": "CRM and Sales",
+      "auth_methods": [
+        "oauth2"
+      ],
+      "api_surface_type": "Both",
+      "evidence_urls": [
+        "https://www.zoho.com/crm/",
+        "https://www.zoho.com/crm/developer/docs/",
+        "https://www.zoho.com/crm/zohocrm-pricing.html?source_from=crm-header"
+      ]
+    },
+    {
+      "id": 26,
+      "app": "Discord",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.discord.com/developers/quick-start/overview-of-apps",
+        "https://docs.discord.com/developers/platform/oauth2-and-permissions",
+        "https://docs.discord.com/developers/reference",
+        "https://docs.discord.com/developers/topics/rate-limits",
+        "https://discord.com/developers"
+      ]
+    },
+    {
+      "id": 25,
+      "app": "Pumble",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "api_key"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://pumble.com/",
+        "https://pumble.com/pricing",
+        "https://pumble.com/help/integrations/pumble-api-overview/",
+        "https://pumble-api-keys.addons.marketplace.cake.com/api-docs/"
+      ]
+    },
+    {
+      "id": 21,
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://slack.com/",
+        "https://slack.com/pricing",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/reference/methods/",
+        "https://slack.com/help/articles/14588961730067-Model-Context-Protocol-for-Slack"
+      ]
+    },
+    {
+      "id": 27,
+      "app": "Telegram",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "token",
+        "other"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://core.telegram.org/",
+        "https://core.telegram.org/bots",
+        "https://core.telegram.org/bots/api",
+        "https://core.telegram.org/bots/faq",
+        "https://core.telegram.org/api",
+        "https://core.telegram.org/api/obtaining_api_id",
+        "https://gateway.telegram.org/"
+      ]
+    },
+    {
+      "id": 22,
+      "app": "Twilio",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "basic",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/usage/api",
+        "https://www.twilio.com/docs/usage/requests-to-twilio",
+        "https://www.twilio.com/en-us/pricing",
+        "https://www.twilio.com/docs/ai/mcp"
+      ]
+    },
+    {
+      "id": 30,
+      "app": "Vonage",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "api_key",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://developer.vonage.com/en/getting-started/overview",
+        "https://developer.vonage.com/en/getting-started/concepts/authentication?source=getting-started",
+        "https://www.vonage.com/communications-apis/pricing/"
+      ]
+    },
+    {
+      "id": 28,
+      "app": "WhatsApp Business",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://developers.facebook.com/docs/whatsapp",
+        "https://developers.facebook.com/docs/whatsapp/about-the-platform",
+        "https://developers.facebook.com/docs/whatsapp/access-tokens"
+      ]
+    },
+    {
+      "id": 23,
+      "app": "Zoho Cliq",
+      "category": "Communications and Messaging",
+      "auth_methods": [
+        "oauth2"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.zoho.com/cliq/",
+        "https://www.zoho.com/cliq/pricing.html",
+        "https://www.zoho.com/cliq/plan-comparison.html",
+        "https://www.zoho.com/cliq/help/restapi/v2/introduction/"
+      ]
+    },
+    {
+      "id": 55,
+      "app": "Apify",
+      "category": "Data, SEO and Scraping",
+      "auth_methods": [
+        "token",
+        "other"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.apify.com/",
+        "https://docs.apify.com/api/v2",
+        "https://apify.com/pricing",
+        "https://mcp.apify.com/"
+      ]
+    },
+    {
+      "id": 57,
+      "app": "Bright Data",
+      "category": "Data, SEO and Scraping",
+      "auth_methods": [
+        "token",
+        "basic"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://brightdata.com/ai/mcp-server",
+        "https://docs.brightdata.com/",
+        "https://docs.brightdata.com/api-reference/authentication",
+        "https://docs.brightdata.com/api-reference/introduction",
+        "https://docs.brightdata.com/ai/mcp-server/overview",
+        "https://github.com/brightdata/brightdata-mcp"
+      ]
+    },
+    {
+      "id": 51,
+      "app": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "auth_methods": [
+        "basic"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.dataforseo.com/v3/",
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/pricing"
+      ]
+    },
+    {
+      "id": 56,
+      "app": "Firecrawl",
+      "category": "Data, SEO and Scraping",
+      "auth_methods": [
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://firecrawl.dev",
+        "https://docs.firecrawl.dev/features/scrape",
+        "https://docs.firecrawl.dev/api-reference/introduction",
+        "https://docs.firecrawl.dev/features/mcp",
+        "https://www.firecrawl.dev/pricing"
+      ]
+    },
+    {
+      "id": 54,
+      "app": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "auth_methods": [
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.mrscraper.com/docs/getting-started/overview",
+        "https://docs.mrscraper.com/docs/api/overview",
+        "https://docs.mrscraper.com/docs/api/authentication",
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "https://mrscraper.com/pricing"
+      ]
+    },
+    {
+      "id": 69,
+      "app": "Datadog",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "api_key",
+        "other"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.datadoghq.com/api/latest/",
+        "https://docs.datadoghq.com/api/latest/authentication/",
+        "https://docs.datadoghq.com/api/latest/rate-limits/",
+        "https://www.datadoghq.com/pricing/",
+        "https://www.datadoghq.com/product/ai/mcp-server/",
+        "https://docs.datadoghq.com/bits_ai/mcp_server/"
+      ]
+    },
+    {
+      "id": 61,
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "Both",
+      "evidence_urls": [
+        "https://docs.github.com/rest",
+        "https://docs.github.com/en/graphql",
+        "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github#authenticating-with-the-api",
+        "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api",
+        "https://github.com/pricing"
+      ]
+    },
+    {
+      "id": 68,
+      "app": "MongoDB Atlas",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "oauth2",
+        "basic",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.mongodb.com/docs/atlas/api/",
+        "https://www.mongodb.com/docs/atlas/api/api-authentication/",
+        "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-ref/",
+        "https://www.mongodb.com/docs/atlas/api/atlas-admin-api-v2-rate-limits/",
+        "https://www.mongodb.com/products/platform/atlas-database",
+        "https://www.mongodb.com/docs/mongodb-mcp-server/"
+      ]
+    },
+    {
+      "id": 66,
+      "app": "Neo4j",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "oauth2",
+        "basic",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://neo4j.com/docs/api",
+        "https://neo4j.com/docs/aura/platform/api/",
+        "https://neo4j.com/pricing/",
+        "https://neo4j.com/solutions/model-context-protocol/"
+      ]
+    },
+    {
+      "id": 63,
+      "app": "Netlify",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "https://www.netlify.com/pricing/",
+        "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/#authentication"
+      ]
+    },
+    {
+      "id": 70,
+      "app": "Sentry",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "oauth2",
+        "token",
+        "other"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.sentry.io/api/",
+        "https://docs.sentry.io/api/auth/",
+        "https://docs.sentry.io/api/rate-limits/",
+        "https://sentry.io/pricing/",
+        "https://docs.sentry.io/platforms/python/integrations/mcp/"
+      ]
+    },
+    {
+      "id": 65,
+      "app": "Supabase",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "oauth2",
+        "api_key",
+        "token"
+      ],
+      "api_surface_type": "Both",
+      "evidence_urls": [
+        "https://supabase.com/docs",
+        "https://supabase.com/docs/guides/api",
+        "https://supabase.com/docs/guides/auth",
+        "https://supabase.com/docs/guides/api/api-keys",
+        "https://supabase.com/docs/guides/ai-tools/mcp",
+        "https://supabase.com/pricing",
+        "https://supabase.com/docs/guides/platform/performance#rate-limits"
+      ]
+    },
+    {
+      "id": 62,
+      "app": "Vercel",
+      "category": "Developer, Infra and Data platforms",
+      "auth_methods": [
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/limits",
+        "https://vercel.com/docs/mcp",
+        "https://vercel.com/pricing"
+      ]
+    },
+    {
+      "id": 43,
+      "app": "BigCommerce",
+      "category": "Ecommerce",
+      "auth_methods": [
+        "oauth2",
+        "token",
+        "other"
+      ],
+      "api_surface_type": "Both",
+      "evidence_urls": [
+        "https://developer.bigcommerce.com",
+        "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+        "https://docs.bigcommerce.com/developer/api-reference/mcp/overview",
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/rate-limits",
+        "https://docs.bigcommerce.com/developer/docs/integrations/becoming-a-partner"
+      ]
+    },
+    {
+      "id": 48,
+      "app": "Gumroad",
+      "category": "Ecommerce",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://gumroad.com/api",
+        "https://gumroad.com/pricing"
+      ]
+    },
+    {
+      "id": 41,
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "GraphQL",
+      "evidence_urls": [
+        "https://shopify.dev/docs",
+        "https://shopify.dev/docs/api/admin-graphql/latest",
+        "https://shopify.dev/docs/api/admin-graphql/latest#rate-limits",
+        "https://shopify.dev/docs/api/storefront/latest",
+        "https://www.shopify.com/pricing"
+      ]
+    },
+    {
+      "id": 42,
+      "app": "WooCommerce",
+      "category": "Ecommerce",
+      "auth_methods": [
+        "basic",
+        "other"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://developer.woocommerce.com/docs/apis/rest-api/",
+        "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+        "https://developer.woocommerce.com/docs/apis/store-api/",
+        "https://woocommerce.com/pricing/",
+        "https://woocommerce.com/document/woocommerce-rest-api/"
+      ]
+    },
+    {
+      "id": 88,
+      "app": "Brex",
+      "category": "Finance and Fintech",
+      "auth_methods": [
+        "oauth2",
+        "token",
+        "api_key"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://developer.brex.com/",
+        "https://developer.brex.com/guides/authentication",
+        "https://developer.brex.com/guides/partner_authentication",
+        "https://developer.brex.com/docs/mcp",
+        "https://www.brex.com/pricing"
+      ]
+    },
+    {
+      "id": 81,
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "auth_methods": [
+        "token",
+        "basic"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://docs.stripe.com/api",
+        "https://docs.stripe.com/api/authentication",
+        "https://docs.stripe.com/rate-limits",
+        "https://stripe.com/pricing",
+        "https://docs.stripe.com/mcp"
+      ]
+    },
+    {
+      "id": 85,
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "auth_methods": [
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.ipayx.ai/developers",
+        "https://www.ipayx.ai/pricing",
+        "https://www.ipayx.ai/mcp",
+        "https://www.ipayx.ai/docs/api"
+      ]
+    },
+    {
+      "id": 36,
+      "app": "Klaviyo",
+      "category": "Marketing, Ads, Email and Social",
+      "auth_methods": [
+        "oauth2",
+        "api_key"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://developers.klaviyo.com/en/docs/get_started",
+        "https://developers.klaviyo.com/en/docs/authenticate_api_requests",
+        "https://developers.klaviyo.com/en/docs/rate_limits_and_error_handling",
+        "https://developers.klaviyo.com/en/reference/api_overview",
+        "https://www.klaviyo.com/pricing"
+      ]
+    },
+    {
+      "id": 35,
+      "app": "Mailchimp",
+      "category": "Marketing, Ads, Email and Social",
+      "auth_methods": [
+        "oauth2",
+        "api_key",
+        "token",
+        "other"
+      ],
+      "api_surface_type": "Both",
+      "evidence_urls": [
+        "https://mailchimp.com/developer/",
+        "https://mailchimp.com/developer/marketing/docs/fundamentals/",
+        "https://mailchimp.com/developer/marketing/api/",
+        "https://mailchimp.com/developer/transactional/docs/fundamentals/",
+        "https://mailchimp.com/developer/open-commerce/docs/fundamentals/",
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    },
+    {
+      "id": 40,
+      "app": "SendGrid",
+      "category": "Marketing, Ads, Email and Social",
+      "auth_methods": [
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.twilio.com/docs/sendgrid",
+        "https://www.twilio.com/docs/sendgrid/api-reference",
+        "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+        "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/rate-limits",
+        "https://sendgrid.com/",
+        "https://www.twilio.com/en-us/sendgrid"
+      ]
+    },
+    {
+      "id": 72,
+      "app": "Airtable",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://airtable.com/developers/web/api/introduction",
+        "https://airtable.com/developers/web/api/authentication",
+        "https://airtable.com/developers/web/api/rate-limits",
+        "https://airtable.com/developers/web/api/billing-plans"
+      ]
+    },
+    {
+      "id": 75,
+      "app": "Asana",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://developers.asana.com/docs/overview",
+        "https://developers.asana.com/docs/authentication",
+        "https://developers.asana.com/reference/ac-api-reference",
+        "https://developers.asana.com/docs/rate-limits",
+        "https://developers.asana.com/docs/mcp-server",
+        "https://asana.com/pricing"
+      ]
+    },
+    {
+      "id": 77,
+      "app": "ClickUp",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://clickup.com/api",
+        "https://developer.clickup.com/docs/authentication",
+        "https://developer.clickup.com/docs/apis-available-by-plan",
+        "https://developer.clickup.com/docs/open-api-spec",
+        "https://developer.clickup.com/docs/rate-limits"
+      ]
+    },
+    {
+      "id": 78,
+      "app": "Coda",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://coda.io/developers",
+        "https://coda.io/developers/apis/v1",
+        "https://coda.io/pricing"
+      ]
+    },
+    {
+      "id": 80,
+      "app": "Harvest",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://help.getharvest.com/api-v2/introduction/overview/general/",
+        "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "https://www.getharvest.com/pricing"
+      ]
+    },
+    {
+      "id": 74,
+      "app": "Jira",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token",
+        "basic",
+        "other"
+      ],
+      "api_surface_type": "Both",
+      "evidence_urls": [
+        "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro",
+        "https://www.atlassian.com/software/jira/pricing",
+        "https://developer.atlassian.com/platform/atlassian-graphql-api/graphql/",
+        "https://developer.atlassian.com/cloud/rovo-mcp/"
+      ]
+    },
+    {
+      "id": 73,
+      "app": "Linear",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "GraphQL",
+      "evidence_urls": [
+        "https://linear.app/",
+        "https://linear.app/developers/graphql",
+        "https://linear.app/developers/rate-limiting",
+        "https://linear.app/pricing"
+      ]
+    },
+    {
+      "id": 71,
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://developers.notion.com/reference/intro",
+        "https://developers.notion.com/docs/authorization",
+        "https://developers.notion.com/reference/request-limits",
+        "https://developers.notion.com/docs/mcp",
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "id": 14,
+      "app": "Front",
+      "category": "Support and Helpdesk",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://dev.frontapp.com/docs/core-api-overview",
+        "https://dev.frontapp.com/docs/authentication",
+        "https://dev.frontapp.com/docs/rate-limiting",
+        "https://dev.frontapp.com/docs/mcp-server",
+        "https://front.com/pricing"
+      ]
+    },
+    {
+      "id": 12,
+      "app": "Intercom",
+      "category": "Support and Helpdesk",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "api_surface_type": "REST",
+      "evidence_urls": [
+        "https://www.intercom.com/pricing",
+        "https://developers.intercom.com/docs/build-an-integration/learn-more/authentication",
+        "https://developers.intercom.com/docs/guides/mcp",
+        "https://developers.intercom.com/docs/references/rest-api/errors/rate-limiting",
+        "https://developers.intercom.com/docs/references/rest-api/intro"
+      ]
+    }
+  ],
+  "needs_outreach": [
+    {
+      "id": 92,
+      "app": "Otter AI",
+      "category": "AI, Research and Media-native",
+      "access_tier": "paid_plan_required",
+      "blocker": "API access appears restricted to the Enterprise plan, requiring paid upgrade/sales motion before building against the official API.",
+      "evidence_urls": [
+        "https://otter.ai/",
+        "https://otter.ai/pricing",
+        "https://help.otter.ai/hc/en-us"
+      ]
+    },
+    {
+      "id": 9,
+      "app": "Copper",
+      "category": "CRM and Sales",
+      "access_tier": "paid_plan_required",
+      "blocker": "OAuth app registration appears to require contacting Copper via partners@copper.com, though API-key access is documented for paid customers.",
+      "evidence_urls": [
+        "https://developer.copper.com/",
+        "https://developer.copper.com/introduction/authentication.html",
+        "https://developer.copper.com/introduction/oauth/index.html",
+        "https://developer.copper.com/introduction/requests.html",
+        "https://www.copper.com/pricing"
+      ]
+    },
+    {
+      "id": 1,
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "access_tier": "paid_plan_required",
+      "blocker": "Public developer docs and OAuth-based API documentation are available, but practical toolkit coverage depends on having a suitable Salesforce edition/org with API access rather than universally available free self-serve access.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs",
+        "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+        "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+        "https://developer.salesforce.com/docs/platform/graphql/guide/graphql-about.html",
+        "https://developer.salesforce.com/docs/atlas.en-us.salesforce_app_limits_cheatsheet.meta/salesforce_app_limits_cheatsheet/salesforce_app_limits_platform_api.htm",
+        "https://www.salesforce.com/editions-pricing/sales-cloud/"
+      ]
+    },
+    {
+      "id": 59,
+      "app": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "access_tier": "partner_gated_contact_sales",
+      "blocker": "API access appears to require sales/contact-gated onboarding rather than a verifiable self-serve developer signup flow.",
+      "evidence_urls": [
+        "https://www.waterfall.io/",
+        "https://docs.waterfall.io/v1/introduction",
+        "https://docs.waterfall.io/v1/authentication",
+        "https://docs.waterfall.io/v1/inline-usage"
+      ]
+    },
+    {
+      "id": 44,
+      "app": "Salesforce Commerce Cloud",
+      "category": "Ecommerce",
+      "access_tier": "partner_gated_contact_sales",
+      "blocker": "Public developer docs and documented OAuth-based auth exist, but tenant/product access appears enterprise-oriented rather than clearly self-serve from the evidence gathered, so toolkit development likely requires an existing Commerce Cloud environment or manual enterprise setup.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/commerce",
+        "https://developer.salesforce.com/developer-centers/commerce-cloud",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/overview",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/general-guidance.html",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/throttle-rates.html"
+      ]
+    },
+    {
+      "id": 84,
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "access_tier": "partner_gated_contact_sales",
+      "blocker": "Toolkit build appears possible against underlying NMI APIs, but the exact official Paygent Connect first-party app identity, access path, and branded API scope were not verified from gathered evidence.",
+      "evidence_urls": [
+        "https://docs.nmi.com/reference/getting-started",
+        "https://docs.nmi.com/reference/authentication",
+        "https://www.nmi.com/"
+      ]
+    },
+    {
+      "id": 90,
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "access_tier": "partner_gated_contact_sales",
+      "blocker": "No self-serve developer access or documented authentication details were found in the gathered first-party evidence, so building a reliable toolkit today appears blocked by sales-gated access and thin public technical docs.",
+      "evidence_urls": [
+        "https://pitchbook.com/products/direct-access-data",
+        "https://pitchbook.com/products/direct-access-data/api"
+      ]
+    },
+    {
+      "id": 82,
+      "app": "Plaid",
+      "category": "Finance and Fintech",
+      "access_tier": "self_serve_free",
+      "blocker": "Public docs and self-serve sandbox are sufficient to prototype, but production use and some higher tiers appear to involve sales-gated plans, and MCP availability was not verified on a first-party Plaid page.",
+      "evidence_urls": [
+        "https://plaid.com/docs",
+        "https://plaid.com/docs/quickstart/",
+        "https://plaid.com/docs/api/",
+        "https://plaid.com/pricing/",
+        "https://github.com/plaid/mcp-server"
+      ]
+    },
+    {
+      "id": 20,
+      "app": "Gladly",
+      "category": "Support and Helpdesk",
+      "access_tier": "partner_gated_contact_sales",
+      "blocker": "Sales-gated platform access/pricing means a first toolkit appears technically feasible from the public REST docs, but practical build access likely requires manual vendor engagement.",
+      "evidence_urls": [
+        "https://www.gladly.ai/",
+        "https://developer.gladly.com/",
+        "https://developer.gladly.com/rest/",
+        "https://www.gladly.ai/contact/",
+        "https://www.gladly.ai/integrations/"
+      ]
+    }
+  ],
+  "headline_findings": [
+    "oauth2 is the most common auth method (65 mentions).",
+    "37 of 100 apps are gated beyond free/trial access.",
+    "Top blocker: paid plan required (18 apps).",
+    "50 apps look like easy toolkit wins.",
+    "9 apps likely need outreach or partnership access."
+  ]
+}

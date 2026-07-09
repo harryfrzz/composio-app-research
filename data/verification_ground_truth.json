@@ -1,0 +1,883 @@
+[
+  {
+    "app_id": 10,
+    "app": "DealCloud",
+    "verified_result": {
+      "id": 10,
+      "app": "DealCloud",
+      "category": "CRM and Sales",
+      "description": "DealCloud provides documented REST APIs for authentication, user management, schema, data, backups, publications, and relationship intelligence, plus a DealCloud MCP Server in client preview starting July 2026.",
+      "auth_methods": [
+        "oauth2",
+        "api_key"
+      ],
+      "auth_notes": "Docs describe enabling a user API key in the DealCloud profile, and using OAuth2 Client Credentials to obtain bearer tokens for API requests. API access requires the user to belong to a group with the API capability enabled; otherwise contact an org admin or DealCloud Customer Success Manager.",
+      "access_tier": "admin_approval_required",
+      "gating_reason": "API access requires a user in DealCloud with API permissions enabled via Admin > User Management. If the user cannot see Admin, they must contact their organization's admin or DealCloud Customer Success Manager for assistance.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Comprehensive documented REST APIs across authentication, user management, schema, data, backups, publications, relationship intelligence, files, reports, and more; Swagger/OpenAPI is available per DealCloud site.",
+        "mcp_exists": true,
+        "mcp_notes": "DealCloud documents an MCP server, but it is marked as 'client preview starting July 2026', so availability may be limited."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://api.docs.dealcloud.com/docs",
+        "https://api.docs.dealcloud.com/docs/apikeys",
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/docs/limits",
+        "https://api.docs.dealcloud.com/mcp"
+      ],
+      "rate_limit_notes": "Endpoint-specific limits are documented: OAuth token endpoint 300/minute; User Management 5/second; Data 5/second; Schema 5/second; RelIntel 5/second; Publications 1000/second; eMarketing 1000/second. Responses include X-Rate-Limit, X-Rate-Limit-Remaining, and X-Rate-Limit-Reset headers, and actual response headers are authoritative.",
+      "notable_signals": "Public docs explicitly say this site provides a comprehensive overview of DealCloud REST APIs and note each DealCloud site exposes an interactive Swagger page plus a Swagger/OpenAPI spec. Tokens expire after 900 seconds. MCP documentation is present.",
+      "agent_confidence": 91,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://api.docs.dealcloud.com",
+      "https://api.docs.dealcloud.com/docs",
+      "https://api.docs.dealcloud.com/docs/apikeys",
+      "https://api.docs.dealcloud.com/docs/token",
+      "https://api.docs.dealcloud.com/docs/limits",
+      "https://api.docs.dealcloud.com/mcp"
+    ],
+    "verification_notes": "Used only the provided fetched text. Classified access tier as admin_approval_required because API capability must be enabled in Admin > User Management and some users must contact an org admin/CSM for assistance. Marked buildability ready_today because public documentation, auth flow, endpoints, and rate limits are documented; while the MCP server is only in client preview, the REST API itself appears available."
+  },
+  {
+    "app_id": 84,
+    "app": "Paygent Connect",
+    "verified_result": {
+      "id": 84,
+      "app": "Paygent Connect",
+      "category": "Finance and Fintech",
+      "description": "NMI-powered payment gateway/API surface evidenced via NMI docs: payment processing, merchant sign-up/onboarding, account management, reporting, administration, and webhooks.",
+      "auth_methods": [
+        "oauth2"
+      ],
+      "auth_notes": "NMI Authentication docs state: 'This API uses OAuth 2.0 for authentication' and describes obtaining an access token from the Authorization endpoint.",
+      "access_tier": "admin_approval_required",
+      "gating_reason": "Evidence shows Merchant Portal and Partner Portal references and merchant/account onboarding workflows, but the fetched Paygent-specific URL failed and no self-serve signup/pricing/access process is shown in the provided text.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Documented REST endpoints and guides cover payment processing (e.g. POST /v5/payments/sale), merchant sign-up/onboarding, account management, reporting, administration, and webhooks.",
+        "mcp_exists": false,
+        "mcp_notes": "No evidence of an MCP server in the fetched text."
+      },
+      "buildability_verdict": "ready_with_workaround",
+      "blocker": "Paygent-specific documentation/content was not fetched (HTTP status 0), so applicability of the generic NMI API docs to Paygent Connect specifically is unconfirmed; integration may require validating merchant access, branding relationship, and endpoint availability with a human.",
+      "evidence_urls": [
+        "https://docs.nmi.com/reference/getting-started",
+        "https://docs.nmi.com/reference/authentication-1",
+        "https://docs.nmi.com/reference/create-sale-v5",
+        "https://docs.nmi.com/reference/overview",
+        "https://docs.nmi.com/reference/rate-limiting"
+      ],
+      "rate_limit_notes": "NMI documents rare rate limits. Payment API-specific limit returns response=3 and response_code=301 ('Rate limit exceeded'); system-wide rate limit may return HTTP 429. Guidance: wait before retrying, reduce simultaneous connections, check credentials, contact support.",
+      "notable_signals": "Docs explicitly mention OpenAPI availability via llms.txt, OAuth 2.0 auth, sandbox endpoint for sale API, webhook signing/verification, and broad payment/account/reporting capabilities.",
+      "agent_confidence": 62,
+      "needs_human_review": true,
+      "human_review_reason": "The app-specific Paygent Connect URL provided no content (HTTP status 0). Verification relies entirely on generic NMI documentation and cannot confirm whether 'Paygent Connect' specifically exposes the same API surface, access model, or branding relationship without human review."
+    },
+    "evidence_checked": [
+      "https://paygent (NMI-powered)",
+      "https://docs.nmi.com/reference/overview",
+      "https://docs.nmi.com/reference/authentication-1",
+      "https://docs.nmi.com/reference/rate-limiting",
+      "https://docs.nmi.com/reference/getting-started",
+      "https://docs.nmi.com/reference/create-sale-v5"
+    ],
+    "verification_notes": "Used only fetched evidence. Because the Paygent-specific source failed, I mapped capabilities from NMI docs referenced by the hint '(NMI-powered)'. This supports existence of an OAuth2-authenticated REST API with payment and webhook functionality, but app-specific applicability remains unconfirmed, so human review is required."
+  },
+  {
+    "app_id": 85,
+    "app": "iPayX",
+    "verified_result": {
+      "id": 85,
+      "app": "iPayX",
+      "category": "Finance and Fintech",
+      "description": "iPayX Protocol is described as a \"FINTRAC-registered FX forensic audit layer.\"",
+      "auth_methods": [
+        "other"
+      ],
+      "auth_notes": "No authentication documentation is present in the fetched evidence; auth method cannot be verified from the provided text.",
+      "access_tier": "admin_approval_required",
+      "gating_reason": "The fetched evidence does not expose usable API/docs details, pricing, signup, or self-serve access information; access tier cannot be confirmed from the provided text.",
+      "api_surface": {
+        "type": "None",
+        "breadth": "No API surface is described in the fetched evidence beyond the product tagline repeated across pages.",
+        "mcp_exists": false,
+        "mcp_notes": "No MCP server or MCP-related documentation is mentioned in the fetched evidence."
+      },
+      "buildability_verdict": "blocked",
+      "blocker": "Insufficient documentation in the fetched evidence to verify any API endpoints, developer access, authentication flow, or integration method.",
+      "evidence_urls": [
+        "https://ipayx.ai/docs",
+        "https://www.ipayx.ai/",
+        "https://www.ipayx.ai/developers",
+        "https://www.ipayx.ai/pricing"
+      ],
+      "rate_limit_notes": "No rate limit information is present in the fetched evidence.",
+      "notable_signals": "All fetched pages repeat the same short tagline: \"iPayX Protocol — FINTRAC-registered FX forensic audit layer.\"",
+      "agent_confidence": 20,
+      "needs_human_review": true,
+      "human_review_reason": "The fetched page text is extremely sparse and does not contain substantive documentation, pricing, auth, or API details; multiple key fields cannot be verified from the provided evidence alone."
+    },
+    "evidence_checked": [
+      "https://ipayx.ai/docs",
+      "https://www.ipayx.ai/",
+      "https://www.ipayx.ai/developers",
+      "https://www.ipayx.ai/pricing"
+    ],
+    "verification_notes": "Used only the provided fetched text. Because every page excerpt contains only the same tagline and no concrete developer/API details, most fields are unverifiable. Chose conservative values and flagged for human review."
+  },
+  {
+    "app_id": 90,
+    "app": "PitchBook",
+    "verified_result": {
+      "id": 90,
+      "app": "PitchBook",
+      "category": "Finance and Fintech",
+      "description": "PitchBook provides private capital market data, research, and workflow tools, including desktop/mobile offerings, integrations, CRM integration, and direct data access via an API and data feed for datasets such as companies, investors, deals, funds, credit, debt, lenders, limited partners, people, and service providers.",
+      "auth_methods": [
+        "other"
+      ],
+      "auth_notes": "The fetched evidence references login and gated access but does not provide API-specific authentication documentation.",
+      "access_tier": "partner_gated_contact_sales",
+      "gating_reason": "The pricing page requires users to 'Request Pricing' and says to 'get in touch with a representative today.' It also says free trial access is discretionary: 'we’ll see if a free trial might be right for you.'",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "The available evidence explicitly mentions 'the PitchBook API and Data feed' and describes broad private-market datasets and integrations, but no endpoint-level documentation is present in the fetched text.",
+        "mcp_exists": false,
+        "mcp_notes": "No MCP offering is mentioned in the fetched evidence."
+      },
+      "buildability_verdict": "blocked",
+      "blocker": "The fetched evidence does not expose accessible API documentation, authentication details, or self-serve developer onboarding; most relevant pages returned 403 and the remaining page only provides marketing/pricing copy and representative-led contact flows.",
+      "evidence_urls": [
+        "https://pitchbook.com/pricing"
+      ],
+      "rate_limit_notes": "No rate limits were mentioned in the fetched evidence.",
+      "notable_signals": "The pricing page highlights 'Direct Data' to connect customer systems with 'the PitchBook API and Data feed,' plus CRM integration, Excel/PowerPoint plugins, a Chrome extension, mobile app, and broad premium financial datasets.",
+      "agent_confidence": 66,
+      "needs_human_review": true,
+      "human_review_reason": "Most fetched URLs returned 403, leaving only a pricing/marketing page as evidence. API protocol, auth method, and actual documentation accessibility cannot be confidently verified from the fetched text alone."
+    },
+    "evidence_checked": [
+      "https://pitchbook.com",
+      "https://pitchbook.com/",
+      "https://pitchbook.com/pricing",
+      "https://pitchbook.com/free-trial",
+      "https://pitchbook.com/contact",
+      "https://my.pitchbook.com/"
+    ],
+    "verification_notes": "Source-grounded only from fetched text. The pricing page explicitly says 'Direct Data Connect our data to your systems with the PitchBook API and Data feed' and describes representative-led pricing and discretionary free trial access. Because other URLs returned 403 ('Just a moment...'), the evidence is insufficient to verify API auth, docs, or onboarding. Marked API type as REST on low confidence because only a generic 'API' reference is present; human review is required."
+  },
+  {
+    "app_id": 59,
+    "app": "Waterfall.io",
+    "verified_result": {
+      "id": 59,
+      "app": "Waterfall.io",
+      "category": "Data, SEO and Scraping",
+      "description": "B2B data API and enrichment platform that aggregates 30+ data vendors to find contacts, verified emails, mobile numbers, company data, job changes, and email verification via Waterfall API.",
+      "auth_methods": [
+        "api_key"
+      ],
+      "auth_notes": "Docs state all requests are authenticated using the x-api-key header. The marketing site also shows x-waterfall-api-key in one example, but official docs consistently specify x-api-key.",
+      "access_tier": "partner_gated_contact_sales",
+      "gating_reason": "The site heavily promotes 'Book a Call,' and the demo FAQ says they are 'very selective in partnering with platform customers' for product-building use cases, suggesting sales/partner gating despite public docs.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Documented REST API with endpoints for Prospector, Search Contact, Search Company, Contact Enrichment, Phone Enrichment, Company Enrichment, Company Reveal, Company Titles, Job Change Detection, Email Verification, Webhook JWKS, Account Reporting, and API Key Management.",
+        "mcp_exists": false,
+        "mcp_notes": "No MCP server or MCP-related documentation appears in the fetched evidence."
+      },
+      "buildability_verdict": "ready_with_workaround",
+      "blocker": "Public documentation shows a usable REST API, but the fetched evidence does not confirm self-serve API key issuance or open access; product-building access may require sales/partner approval.",
+      "evidence_urls": [
+        "https://docs.waterfall.io/v1/introduction",
+        "https://docs.waterfall.io/v1/authentication",
+        "https://www.waterfall.io/book-a-call",
+        "https://www.waterfall.io/privacy-policy",
+        "https://waterfall.io"
+      ],
+      "rate_limit_notes": "Rate limit docs exist, and the marketing site claims 'High rate limits' and supports '100 or 1,000 requests per minute,' but exact enforced limits were not included in the fetched excerpts.",
+      "notable_signals": "Public docs reference OpenAPI specs, webhook verification/JWKS, usage tracking, account reporting, and API key management. Privacy policy says customers can enrich systems and build products; the demo page says platform partnerships are selective.",
+      "agent_confidence": 79,
+      "needs_human_review": true,
+      "human_review_reason": "Access model is ambiguous in the fetched evidence: public docs imply an operational API, but the commercial pages emphasize booking a call and selective partnerships for platform/product use cases. Human confirmation is needed on actual onboarding and API key availability."
+    },
+    "evidence_checked": [
+      "https://waterfall.io",
+      "https://docs.waterfall.io/v1/introduction",
+      "https://docs.waterfall.io/v1/authentication",
+      "https://docs.waterfall.io/llms.txt",
+      "https://www.waterfall.io/book-a-call",
+      "https://www.waterfall.io/privacy-policy"
+    ],
+    "verification_notes": "Used only fetched evidence. API existence and auth are well supported by docs. Access tier is the least certain field because documentation is public while go-to-market/product usage appears sales-mediated; therefore marked needs_human_review=true."
+  },
+  {
+    "app_id": 97,
+    "app": "higgsfield",
+    "verified_result": {
+      "id": 97,
+      "app": "higgsfield",
+      "category": "AI, Research and Media-native",
+      "description": "Higgsfield offers agent-connected AI image and video generation via CLI, MCP, and skills, including generation, video analysis, character training, workflow automation, and website/app deployment features.",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "auth_notes": "CLI and MCP flows require signing in with a Higgsfield account via browser/login; pages explicitly say no API key is needed. CLI docs mention short-lived tokens and commands like auth login/logout/inspect token, but the fetched evidence does not specify the protocol for those tokens.",
+      "access_tier": "paid_plan_required",
+      "gating_reason": "The service uses Higgsfield account authentication and credit-based usage tied to an existing Higgsfield plan; pricing details are not visible in fetched text, and no self-serve free tier is confirmed.",
+      "api_surface": {
+        "type": "None",
+        "breadth": "No direct REST or GraphQL API documentation is shown in the fetched evidence. Exposed integration surfaces are MCP server, CLI commands, and Skills package covering image/video generation, workflows, voices, Soul ID, uploads, marketing studio, and website deployment.",
+        "mcp_exists": true,
+        "mcp_notes": "Public docs provide MCP setup instructions and a server URL (https://mcp.higgsfield.ai/mcp), though direct fetch of the endpoint returns 401 Unauthorized, consistent with authenticated access."
+      },
+      "buildability_verdict": "ready_with_workaround",
+      "blocker": "No documented REST/GraphQL API is shown; integration appears to rely on MCP/CLI/account login rather than conventional API keys/endpoints.",
+      "evidence_urls": [
+        "https://higgsfield.ai/cli",
+        "https://github.com/higgsfield-ai/cli",
+        "https://higgsfield.ai/mcp",
+        "https://higgsfield.ai/skills"
+      ],
+      "rate_limit_notes": "No rate limits are described in the fetched evidence. CLI docs note asynchronous polling with --wait, default 3s poll interval, and short-lived tokens.",
+      "notable_signals": "Supports MCP-compatible agents; explicit 'No API keys to manage or configure'; GitHub CLI repo is public with install methods for npm, brew, curl, and extensive command surface; MCP endpoint exists but requires auth (401 when fetched unauthenticated).",
+      "agent_confidence": 81,
+      "needs_human_review": true,
+      "human_review_reason": "Pricing/access tier is not fully verifiable because the pricing page excerpt lacks plan details, so whether there is a true free self-serve tier versus paid-credit requirement is not conclusively established from fetched text alone."
+    },
+    "evidence_checked": [
+      "https://higgsfield.ai/cli",
+      "https://github.com/higgsfield-ai/cli",
+      "https://higgsfield.ai/mcp",
+      "https://higgsfield.ai/skills",
+      "https://higgsfield.ai/pricing",
+      "https://mcp.higgsfield.ai/mcp"
+    ],
+    "verification_notes": "Verified only from fetched text. Strong evidence for MCP, CLI, skills, browser-based account auth, no API key requirement, and broad command surface. Could not verify REST/GraphQL API docs or concrete pricing tiers from the provided excerpts, so marked human review."
+  },
+  {
+    "app_id": 94,
+    "app": "Consensus",
+    "verified_result": {
+      "id": 94,
+      "app": "Consensus",
+      "category": "AI, Research and Media-native",
+      "description": "AI research platform focused on searching peer-reviewed papers, with an API for integrating Consensus search results and citations into internal tools and workflows.",
+      "auth_methods": [
+        "other"
+      ],
+      "auth_notes": "API docs show 'Log In' and credential headers, but the fetched evidence does not specify the exact auth scheme (e.g. API key, OAuth2, bearer token).",
+      "access_tier": "admin_approval_required",
+      "gating_reason": "The API page states 'Request access' and 'The Consensus API is available by application only,' with custom quotes.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Documented v1 quick_search REST endpoint with query parameters for paper search, filters, metadata, relevance scores, and some enterprise-only options like full-text chunks and pagination.",
+        "mcp_exists": true,
+        "mcp_notes": "Docs explicitly reference 'MCP API Reference' and an llms.txt index for pages and endpoints in OpenAPI, indicating MCP-related documentation exists."
+      },
+      "buildability_verdict": "blocked",
+      "blocker": "API access is application-only and the fetched evidence does not reveal a self-serve authentication flow or exact auth method, so integration cannot be confirmed as immediately buildable without provider approval and additional auth details.",
+      "evidence_urls": [
+        "https://consensus.app/home/api/",
+        "https://docs.consensus.app/reference/v1_quick_search"
+      ],
+      "rate_limit_notes": "No explicit rate limits found in fetched evidence. Pricing page says baseline pricing starts at $0.10 per call; docs mention page max 50 and some enterprise-only options.",
+      "notable_signals": "API is positioned for internal copilots/agents and trusted research citations; quick_search returns top 20 results per query; supports advanced filters (study design, countries, year, publisher, domain, etc.); includes enterprise-only features.",
+      "agent_confidence": 86,
+      "needs_human_review": true,
+      "human_review_reason": "Fetched evidence confirms API existence and gating, but does not clearly state the exact authentication method or broader endpoint coverage beyond quick_search."
+    },
+    "evidence_checked": [
+      "https://consensus.app",
+      "https://consensus.app/",
+      "https://consensus.app/pricing/",
+      "https://consensus.app/pricing/team/",
+      "https://consensus.app/home/api/",
+      "https://docs.consensus.app/reference/v1_quick_search"
+    ],
+    "verification_notes": "Used only fetched page text. Homepage/pricing excerpts establish product context. The API landing page confirms an application-only API with request-access gating and baseline per-call pricing. The docs page confirms a REST endpoint at api.consensus.app/v1/quick_search with many query params and enterprise-only fields, but the excerpt does not expose the exact auth mechanism, so auth is left as 'other' and human review is required."
+  },
+  {
+    "app_id": 95,
+    "app": "Reducto",
+    "verified_result": {
+      "id": 95,
+      "app": "Reducto",
+      "category": "AI, Research and Media-native",
+      "description": "Agentic document platform for AI teams, offering APIs for parsing, classification, extraction, splitting, editing, and pipelines for document processing at enterprise scale.",
+      "auth_methods": [
+        "token",
+        "other"
+      ],
+      "auth_notes": "REST API uses Bearer token via Authorization header with REDUCTO_API_KEY. Docs also describe browser-based approval/login for the Reducto MCP server (`uvx mcp-server-reducto --login`) and account signup in Studio to create API keys.",
+      "access_tier": "self_serve_free",
+      "gating_reason": "Pricing page shows Standard plan is Free with first 15K credits included and 'Get started'; quickstart says sign up for a free account and create a new API key.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Document-processing API includes upload, parse, extract, split, classify, edit, pipeline, async variants, job management, webhooks, SDKs for Python/Node/Go, and support for 30+ file types.",
+        "mcp_exists": true,
+        "mcp_notes": "Docs explicitly list a Reducto MCP Server and quickstart includes install/auth instructions plus available tools such as parse_document, extract_data, split_document, classify_document, edit_document, and upload_file."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://reducto.ai",
+        "https://reducto.ai/pricing",
+        "https://docs.reducto.ai/overview",
+        "https://docs.reducto.ai/quickstart",
+        "https://docs.reducto.ai/api-reference/parse",
+        "https://docs.reducto.ai/reference/rate-limits"
+      ],
+      "rate_limit_notes": "Docs state edge rate limits of 1,000 requests/sec sustained per API key for all endpoints, and 200 requests/sec sustained for GET /job/{job_id}. 429s are retried automatically by SDKs with exponential backoff. Separate concurrency throttle may queue parallel parse work instead of rejecting.",
+      "notable_signals": "Homepage says 'Try for free', 3B+ pages processed, 99.9%+ uptime, SOC2 and HIPAA compliance, deploy in customer environment, and enterprise SLAs. Docs mention SaaS, hybrid VPC, full VPC, or air-gapped on-prem deployments, async processing/webhooks, and native SDKs.",
+      "agent_confidence": 93,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://reducto.ai",
+      "https://reducto.ai/pricing",
+      "https://docs.reducto.ai/overview",
+      "https://docs.reducto.ai/quickstart",
+      "https://docs.reducto.ai/api-reference/parse",
+      "https://docs.reducto.ai/reference/rate-limits"
+    ],
+    "verification_notes": "Grounded only in provided fetched text. Auth classified as token because docs explicitly require 'Authorization: Bearer <token>' / REDUCTO_API_KEY. Included 'other' because MCP login uses browser approval flow distinct from direct API auth. API surface marked REST; docs mention SDKs and MCP but no GraphQL evidence. Access tier set self_serve_free because free account, free credits, and self-serve API key creation are explicitly documented, despite higher tiers requiring contact sales."
+  },
+  {
+    "app_id": 54,
+    "app": "MrScraper",
+    "verified_result": {
+      "id": 54,
+      "app": "MrScraper",
+      "category": "Data, SEO and Scraping",
+      "description": "Scraping platform for extracting website data with AI-powered and manual scrapers, bulk scraping, scheduling, proxy management, marketplace templates, and integrations such as webhooks and databases.",
+      "auth_methods": [
+        "token"
+      ],
+      "auth_notes": "The documentation navigation includes 'Token' and an API Playground, suggesting token-based access, but no authentication page content was available in the fetched evidence.",
+      "access_tier": "admin_approval_required",
+      "gating_reason": "Fetched evidence shows documentation and dashboard/API references, but no pricing, signup, or plan details were available because billing pages and API/authentication reference pages returned 404 in the provided evidence.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Documentation mentions a Scraper API, API Playground, webhook integrations, database integrations, and programmatic scraper creation, but the actual API reference pages in the fetched evidence returned 404 so endpoint breadth is unverified.",
+        "mcp_exists": true,
+        "mcp_notes": "The documentation navigation lists 'MCP Server', indicating an MCP offering exists, but the fetched MCP page itself returned 404 so implementation details are unverified."
+      },
+      "buildability_verdict": "blocked",
+      "blocker": "Key verification pages for API reference, authentication, and MCP returned 404 in the provided evidence, so a usable integration path cannot be confirmed from source text alone.",
+      "evidence_urls": [
+        "https://docs.mrscraper.com"
+      ],
+      "rate_limit_notes": "No rate limit information was present in the fetched evidence.",
+      "notable_signals": "Docs mention AI Scraper, Manual Workflow, Bulk Scraping, Proxy Management, Scheduling, Marketplace, API Playground, Webhook, Python SDK, Node.js SDK, LangChain SDK, and MCP Server in navigation.",
+      "agent_confidence": 46,
+      "needs_human_review": true,
+      "human_review_reason": "Key verification pages for API reference, authentication, MCP server, and billing all returned 404 in the provided evidence, so auth details, API surface specifics, and access tier cannot be confirmed from source text alone."
+    },
+    "evidence_checked": [
+      "https://docs.mrscraper.com",
+      "https://docs.mrscraper.com/api-reference/overview",
+      "https://docs.mrscraper.com/api-reference/authentication",
+      "https://docs.mrscraper.com/mcp-server",
+      "https://docs.mrscraper.com/billing/token-plan",
+      "https://docs.mrscraper.com/billing/billing-and-pricing"
+    ],
+    "verification_notes": "Used only the fetched text. Confirmed from the overview page that MrScraper is a scraping platform with API-related and integration features. Because all deeper pages for API/authentication/MCP/billing returned 404 in the fetched evidence, several fields are inferred conservatively and flagged for human review."
+  },
+  {
+    "app_id": 50,
+    "app": "fanbasis",
+    "verified_result": {
+      "id": 50,
+      "app": "fanbasis",
+      "category": "Ecommerce",
+      "description": "All-in-one digital commerce platform for sellers to host, market, sell, and fulfill digital or physical offerings, with payments, subscriptions, analytics, affiliate tools, and financing options.",
+      "auth_methods": [
+        "other"
+      ],
+      "auth_notes": "Public pages show email/password account creation and login, plus 'Continue with Google' and 'Continue with Apple', but the allowed schema does not include email/password or social login specifically. MFA setup with email and phone verification is also shown.",
+      "access_tier": "admin_approval_required",
+      "gating_reason": "Marketing pages and terms state Sellers are 'approved Sellers' and that onboarding, identity verification, compliance screening, and Payment Partner approval are required; FanBasis may approve, suspend, or revoke access at its discretion.",
+      "api_surface": {
+        "type": "None",
+        "breadth": "No public API documentation or developer endpoints are shown in the provided evidence. The site mentions '7000+ App Integrations' and 'integrated tools,' but does not expose a documented API surface in the fetched text.",
+        "mcp_exists": false,
+        "mcp_notes": "No MCP or model context protocol reference found in the provided evidence."
+      },
+      "buildability_verdict": "blocked",
+      "blocker": "Provided evidence does not show any public API, developer documentation, or programmatic access method, and seller access is subject to approval and verification.",
+      "evidence_urls": [
+        "https://fanbasis.com",
+        "https://www.fanbasis.com/terms-condition",
+        "https://www.fanbasis.com/seller"
+      ],
+      "rate_limit_notes": "No rate limit information found in the provided evidence.",
+      "notable_signals": "Claims include '7000+ App Integrations'; features mention subscriptions, affiliate engine, analytics, automated fulfillment, payment routing, BNPL, crypto payments, and that the platform supports digital or physical offerings. Terms say FanBasis is not a bank and uses regulated Payment Partners for payments and settlement.",
+      "agent_confidence": 76,
+      "needs_human_review": true,
+      "human_review_reason": "The fetched evidence establishes product capabilities and account gating, but it does not provide direct evidence of a public API, exact authentication protocol names, or whether integrations are customer-facing APIs versus internal/third-party connectors."
+    },
+    "evidence_checked": [
+      "https://fanbasis.com",
+      "https://www.fanbasis.com/",
+      "https://www.fanbasis.com/seller",
+      "https://www.fanbasis.com/terms-condition",
+      "https://www.fanbasis.com/privacy-policy",
+      "https://www.fanbasis.com/contact-us"
+    ],
+    "verification_notes": "Verified from homepage, seller signup, terms, privacy, and contact pages only. Homepage states FanBasis is 'all-in-one software' with checkout, fulfillment, analytics, affiliate engine, subscriptions, payment links, financing, and '7000+ App Integrations.' Seller/login flows show email/password, Google, Apple, and MFA/identity verification prompts. Terms explicitly say FanBasis equips 'approved Sellers' and that access to payment and other compliance-sensitive features requires identity verification, KYC/AML/OFAC screening, and Payment Partner approval; FanBasis may approve, suspend, or revoke access at any time. No developer/API docs were included in the fetched evidence, so API availability could not be substantiated."
+  },
+  {
+    "app_id": 91,
+    "app": "NotebookLM",
+    "verified_result": {
+      "id": 91,
+      "app": "NotebookLM",
+      "category": "AI, Research and Media-native",
+      "description": "Google’s AI-powered notebook/research app for creating notebooks from sources, chatting with source-grounded content, and generating artifacts like audio overviews, video overviews, flashcards, quizzes, infographics, and slide decks.",
+      "auth_methods": [
+        "other"
+      ],
+      "auth_notes": "Evidence shows users sign in with a Gmail account or qualifying Workspace/Google Cloud account; no API auth method for NotebookLM itself is described in the fetched text.",
+      "access_tier": "self_serve_free",
+      "gating_reason": "NotebookLM Standard can be signed up for free of charge using a Gmail account, with paid upgrades available via Google AI plans, Google Cloud, or qualifying Google Workspace plans. Work/school access may require admin enablement.",
+      "api_surface": {
+        "type": "None",
+        "breadth": "Fetched evidence describes NotebookLM as a browser/mobile app and help center topics, but provides no developer API or programmatic integration surface for NotebookLM itself.",
+        "mcp_exists": false,
+        "mcp_notes": "No MCP server or MCP support mentioned in the fetched evidence."
+      },
+      "buildability_verdict": "blocked",
+      "blocker": "The fetched evidence provides no programmatic API, developer surface, or integration method for NotebookLM itself; only the broader Gemini ecosystem page mentions Gemini Developer API, which is distinct from NotebookLM.",
+      "evidence_urls": [
+        "https://support.google.com/notebooklm/answer/16213268",
+        "https://support.google.com/notebooklm/answer/16269187?hl=en",
+        "https://cloud.google.com/gemini"
+      ],
+      "rate_limit_notes": "NotebookLM standard limits shown: 100 notebooks/user, 50 sources/notebook, 50 chats/day, 3 audio overviews/day. Higher limits are available on paid plans; limits are subject to change and daily/monthly quotas reset periodically.",
+      "notable_signals": "NotebookLM supports enterprise/work/school usage, admin-controlled enablement, upgraded plans through Google AI Plans/Google Cloud/Workspace, and enterprise-grade data protections. Data is not used to train NotebookLM unless feedback is provided; for Workspace/Google Cloud enterprise contexts, uploads/queries/responses are not reviewed by human reviewers or used to improve AI models.",
+      "agent_confidence": 82,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://cloud.google.com/gemini",
+      "https://support.google.com/notebooklm#topic=16164070",
+      "https://support.google.com/notebooklm/answer/16269187?hl=en",
+      "https://support.google.com/notebooklm/answer/16213268"
+    ],
+    "verification_notes": "NotebookLM-specific help pages establish the product’s functionality, free sign-up, paid upgrade paths, usage limits, and admin gating for work/school accounts. The Gemini Cloud page mentions Gemini Developer API and Gemini Enterprise app, but does not state that NotebookLM has its own API. Therefore auth/API fields are conservative and buildability is marked blocked for direct integration with NotebookLM."
+  },
+  {
+    "app_id": 1,
+    "app": "Salesforce",
+    "verified_result": {
+      "id": 1,
+      "app": "Salesforce",
+      "category": "CRM and Sales",
+      "description": "Cloud-based CRM platform with AI/agentic features for sales, service, marketing, commerce, and IT.",
+      "auth_methods": [
+        "other"
+      ],
+      "auth_notes": "The fetched homepage does not document API authentication. OAuth-related developer docs in the provided evidence were inaccessible (403), so auth method cannot be verified from the fetched text alone.",
+      "access_tier": "self_serve_trial",
+      "gating_reason": "Homepage states 'Start for free', 'No credit card required', and 'Free for 30 days.'",
+      "api_surface": {
+        "type": "None",
+        "breadth": "Homepage says 'every Salesforce capability is accessible from any tool, any agent, any interface' via Headless 360, but the fetched evidence does not provide accessible API documentation to verify REST or GraphQL details.",
+        "mcp_exists": false,
+        "mcp_notes": "No MCP mention in the fetched evidence."
+      },
+      "buildability_verdict": "blocked",
+      "blocker": "Critical API facts are unverified because the accessible evidence is mostly marketing copy; the relevant developer/API/auth/rate-limit pages returned 403 or unusable content.",
+      "evidence_urls": [
+        "https://salesforce.com"
+      ],
+      "rate_limit_notes": "Rate limits could not be verified from fetched evidence; provided developer rate-limit page returned 403.",
+      "notable_signals": "Homepage claims 'every Salesforce capability is accessible from any tool, any agent, any interface' and offers a free 30-day trial with no credit card required.",
+      "agent_confidence": 42,
+      "needs_human_review": true,
+      "human_review_reason": "Critical API facts are unverified because the accessible evidence is mostly marketing copy; the relevant developer/API/auth/rate-limit pages returned 403 or unusable content."
+    },
+    "evidence_checked": [
+      "https://salesforce.com",
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm",
+      "https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_oauth_and_connected_apps.htm",
+      "https://help.salesforce.com/s/articleView?id=xcloud.remoteaccess_oauth_flows.htm&type=5",
+      "https://developer.salesforce.com/docs/platform/graphql/guide/graphql-about.html",
+      "https://developer.salesforce.com/docs/platform/graphql/guide/rate-limit.html"
+    ],
+    "verification_notes": "Used only fetched text. Verified product/category and free trial language from homepage. Could not verify REST/GraphQL/auth/rate limits from the supplied evidence because the developer docs returned 403 and help page content was not readable. Marked for human review and kept conservative classifications."
+  },
+  {
+    "app_id": 21,
+    "app": "Slack",
+    "verified_result": {
+      "id": 21,
+      "app": "Slack",
+      "category": "Communications and Messaging",
+      "description": "Slack is a team communication and work platform with channels, messaging, huddles, workflows, integrations, AI features, and an app platform for building apps and agents.",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "auth_notes": "Developer docs explicitly describe OAuth 2.0 and multiple token types for Slack apps, including bot, user, workflow, configuration, app-level, and service tokens.",
+      "access_tier": "self_serve_free",
+      "gating_reason": "The marketing site offers 'Get started' and references 'Paid vs Free' and 'Find your subscription,' indicating a self-serve free tier exists.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Slack provides developer docs with APIs, app management, authentication, messaging, interactivity, workflows, enterprise resources, SDKs, CLI, and samples for building apps and agents.",
+        "mcp_exists": false,
+        "mcp_notes": "No mention of MCP was found in the provided evidence."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://slack.com",
+        "https://api.slack.com/",
+        "https://docs.slack.dev/authentication/",
+        "https://docs.slack.dev/authentication/tokens"
+      ],
+      "rate_limit_notes": "No rate limit information appears in the provided evidence.",
+      "notable_signals": "Evidence shows a mature developer platform: Slack API docs, SDKs for Java/JavaScript/Python, CLI, app manifests, workflows, messaging, authentication, and a 'Create an agent' quickstart plus 'Slack Developer Kit for Agents' on the main site.",
+      "agent_confidence": 88,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://slack.com",
+      "https://slack.com/",
+      "https://api.slack.com/",
+      "https://docs.slack.dev/",
+      "https://docs.slack.dev/authentication/",
+      "https://docs.slack.dev/authentication/tokens"
+    ],
+    "verification_notes": "Used only provided fetched text. Auth is grounded by the authentication overview and tokens pages. API existence is grounded by Slack developer docs and API docs. Access tier inference is based on explicit 'Paid vs Free' and 'Get started' text on slack.com; no stronger pricing detail was provided. API style is marked REST because the evidence references 'APIs' and method-style Slack platform docs but does not mention GraphQL."
+  },
+  {
+    "app_id": 51,
+    "app": "DataForSEO",
+    "verified_result": {
+      "id": 51,
+      "app": "DataForSEO",
+      "category": "Data, SEO and Scraping",
+      "description": "SEO and web data API platform offering SERP, keyword, backlink, on-page, business, app, merchant, content analysis, AI optimization, and related datasets via DataForSEO API v3.",
+      "auth_methods": [
+        "basic"
+      ],
+      "auth_notes": "Docs state DataForSEO uses Basic Authentication only. API login and password are obtained from the dashboard API Access tab and must be passed in the Authorization header as Base64-encoded login:password; login/password cannot be passed in URL parameters and no separate auth call is required.",
+      "access_tier": "self_serve_trial",
+      "gating_reason": "Public docs say to create a free account to get API credentials, with free $1 credit for testing and mention 'Free Unlimited Trial Info' and API Playground available in the dashboard.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Very broad REST API surface across many products/endpoints including SERP, Keywords Data, Domain Analytics, Labs, OnPage, Backlinks, Content Analysis, Merchant, App Data, Business Data, AI Optimization, and databases; docs list many Task POST / Tasks Ready / Task GET / Live variants.",
+        "mcp_exists": true,
+        "mcp_notes": "Fetched site navigation/help center explicitly references 'DataForSEO MCP' and pricing page lists 'AI / LLM Agents DataForSEO MCP', indicating an MCP offering exists, but the provided evidence does not describe its capabilities."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://docs.dataforseo.com",
+        "https://docs.dataforseo.com/v3/auth/",
+        "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+        "https://dataforseo.com/pricing"
+      ],
+      "rate_limit_notes": "Docs say each API has a certain rate limit exposed in HTTP headers: X-RateLimit-Limit and X-RateLimit-Remaining. Users can contact support to increase rate limits.",
+      "notable_signals": "OpenAPI specification is available; official client libraries for PHP, C#, Java, Python, and TypeScript are listed; JSON default responses with optional XML and some HTML outputs; API Playground exists; docs mention webhook/callback guidance, sandbox best practices, and LangChain integration.",
+      "agent_confidence": 91,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://docs.dataforseo.com",
+      "https://docs.dataforseo.com/v3/",
+      "https://docs.dataforseo.com/v3/auth/",
+      "https://dataforseo.com/pricing",
+      "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+      "https://dataforseo.com/help-center/dataforseo-api-explorer"
+    ],
+    "verification_notes": "Grounded only in provided fetched text. REST confirmed explicitly. Basic auth confirmed explicitly on auth page. Free account + $1 testing credit support self-serve trial classification. MCP existence inferred from explicit site/help-center/pricing references to 'DataForSEO MCP', but details are not present in the provided evidence."
+  },
+  {
+    "app_id": 61,
+    "app": "GitHub",
+    "verified_result": {
+      "id": 61,
+      "app": "GitHub",
+      "category": "Developer, Infra and Data platforms",
+      "description": "GitHub provides both REST and GraphQL APIs for creating integrations, retrieving data, and automating workflows across many GitHub resources.",
+      "auth_methods": [
+        "oauth2",
+        "basic",
+        "token"
+      ],
+      "auth_notes": "Docs state REST API authentication can use personal access tokens, tokens generated by a GitHub App, the built-in GITHUB_TOKEN in GitHub Actions, and OAuth tokens via OAuth apps. Some REST endpoints for GitHub Apps and OAuth apps require basic authentication using client ID as username and client secret as password. Username/password authentication is not supported.",
+      "access_tier": "self_serve_free",
+      "gating_reason": "Fetched docs are for GitHub Docs 'Version: Free, Pro, & Team' and describe unauthenticated public-data access plus authenticated access via tokens, with no contact-sales or admin-approval requirement shown in the evidence.",
+      "api_surface": {
+        "type": "Both",
+        "breadth": "Extensive documented API surface: REST docs show 199 articles/endpoints categories across many resources; separate GraphQL docs provide schema reference and guides.",
+        "mcp_exists": false,
+        "mcp_notes": "No MCP server or MCP-specific documentation is mentioned in the fetched evidence."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://docs.github.com/rest",
+        "https://docs.github.com/en/graphql",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+        "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2026-03-10",
+        "https://docs.github.com/en/graphql/overview/rate-limits-and-query-limits-for-the-graphql-api"
+      ],
+      "rate_limit_notes": "REST: unauthenticated public-data requests are 60 requests/hour; authenticated users generally 5,000 requests/hour, with higher limits for some Enterprise Cloud contexts. GitHub App installations use at least 5,000 requests/hour and can scale up to 12,500, or 15,000 on Enterprise Cloud. GITHUB_TOKEN is 1,000 requests/hour per repository (15,000 for enterprise resources). Secondary limits include max 100 concurrent requests and point-based per-minute controls. GraphQL: generally 5,000 points/hour per user or installation, 10,000 in some Enterprise Cloud cases, with separate secondary limits and node/query limits.",
+      "notable_signals": "REST API is versioned and fully described in an OpenAPI-compliant document. GraphQL offers flexible queries and separate schema/reference docs. Docs explicitly recommend using GitHub Apps over OAuth apps in many cases, and recommend webhooks instead of polling to avoid rate limits.",
+      "agent_confidence": 92,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://docs.github.com/rest",
+      "https://docs.github.com/en/rest?apiVersion=2026-03-10",
+      "https://docs.github.com/en/graphql",
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2026-03-10",
+      "https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2026-03-10",
+      "https://docs.github.com/en/graphql/overview/rate-limits-and-query-limits-for-the-graphql-api"
+    ],
+    "verification_notes": "Verified directly from fetched GitHub Docs pages. REST home explicitly says 'Create integrations, retrieve data, and automate your workflows with the GitHub REST API' and mentions OpenAPI description. GraphQL home explicitly documents a separate GraphQL API. Authentication page supports token-based auth, OAuth app tokens, GitHub App tokens, GITHUB_TOKEN, and some basic-auth cases; username/password unsupported. Rate-limit pages provide concrete REST and GraphQL limits. Access tier inferred from docs availability and unauthenticated public-data support; no stronger gating evidence was present."
+  },
+  {
+    "app_id": 41,
+    "app": "Shopify",
+    "verified_result": {
+      "id": 41,
+      "app": "Shopify",
+      "category": "Ecommerce",
+      "description": "Shopify provides developer tooling and APIs to build ecommerce apps, storefronts, and agentic commerce experiences that integrate with Shopify admin, online store, checkout, and related surfaces.",
+      "auth_methods": [
+        "oauth2",
+        "api_key",
+        "token"
+      ],
+      "auth_notes": "Evidence shows agent authentication via client ID/client secret exchanged for a bearer access token at https://api.shopify.com/auth/access_token. The build docs also state apps authenticate with Shopify and manage access scopes, but the fetched evidence does not include a dedicated app-auth page confirming OAuth details, so OAuth2 is inferred from the authentication wording and token flow and should be reviewed by a human.",
+      "access_tier": "admin_approval_required",
+      "gating_reason": "Fetched docs say generating API credentials requires access to Shopify's Dev Dashboard, and app creation/management is done in Dev Dashboard.",
+      "api_surface": {
+        "type": "Both",
+        "breadth": "Broad API surface across GraphQL Admin API, Storefront API, Shopify Functions, Events, Webhooks, ShopifyQL, customer accounts, payments-related APIs, and agent/storefront MCP surfaces.",
+        "mcp_exists": true,
+        "mcp_notes": "Docs explicitly mention Shopify MCP servers for agentic commerce, a Dev MCP server, and Storefront MCP."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://shopify.dev",
+        "https://shopify.dev/docs/apps/build",
+        "https://shopify.dev/docs/agents/get-started/authentication",
+        "https://shopify.dev/docs/api/usage/rate-limits"
+      ],
+      "rate_limit_notes": "Shopify documents rate limits. GraphQL Admin API uses calculated query cost with standard 100 points/second, Advanced 200, Plus 1000, enterprise 2000; single query max cost 1000. Storefront API has no fixed request-per-minute limit for real buyers, but automated traffic/bots are rate-limited. Input arrays max 250; pagination limited to 25,000 objects; 429 throttles and 430 security rejection may occur.",
+      "notable_signals": "Strong developer platform signals: Shopify CLI for apps, Dev Dashboard, App Store distribution, extensive app surfaces, webhooks/events, Shopify Functions, and explicit agentic commerce/UCP tutorials using Shopify MCP servers.",
+      "agent_confidence": 77,
+      "needs_human_review": true,
+      "human_review_reason": "Fetched evidence is strong on APIs, MCP, token-based auth, and rate limits, but it does not directly show the main app authentication mechanism details or whether self-serve signup vs partner/admin approval is required for all API access. OAuth2 classification and access-tier classification therefore need human confirmation."
+    },
+    "evidence_checked": [
+      "https://shopify.dev",
+      "https://shopify.dev/docs",
+      "https://shopify.dev/docs/agents/get-started/authentication",
+      "https://shopify.dev/docs/api/usage/rate-limits",
+      "https://shopify.dev/docs/apps/build"
+    ],
+    "verification_notes": "Verified only from fetched text. Evidence supports broad build surface and MCP existence. Authentication evidence explicitly shows client_credentials to bearer token for agents and mentions API keys/client secret. Build docs mention authentication and scopes but do not expose full app auth flow in fetched text, so auth methods and access tier retain some uncertainty."
+  },
+  {
+    "app_id": 81,
+    "app": "Stripe",
+    "verified_result": {
+      "id": 81,
+      "app": "Stripe",
+      "category": "Finance and Fintech",
+      "description": "Stripe provides a REST API for payments, billing, accounts, payouts, webhooks, financial connections, tax, treasury, issuing, and many other fintech resources, with JSON responses and form-encoded request bodies.",
+      "auth_methods": [
+        "api_key",
+        "basic"
+      ],
+      "auth_notes": "Stripe states the API uses API keys to authenticate requests. Example curl uses HTTP basic auth syntax with the API key as the username and a trailing colon. Docs describe restricted, secret, publishable, and organization API keys.",
+      "access_tier": "self_serve_free",
+      "gating_reason": "Docs state that immediately after creating a Stripe account, you can use your account in testing environments/sandbox, and a sample test API key is included in examples.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Very broad REST surface with many resource families listed in the API reference, including charges, customers, payment intents, checkout, billing, connect, payouts, treasury, tax, issuing, webhooks, and more.",
+        "mcp_exists": true,
+        "mcp_notes": "Stripe documentation navigation includes 'Model Context Protocol' and 'Agent skills', indicating MCP-related documentation/features exist, but the fetched evidence does not confirm a standalone public MCP server endpoint."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://stripe.com/docs/api",
+        "https://docs.stripe.com/keys",
+        "https://docs.stripe.com/rate-limits",
+        "https://docs.stripe.com/get-started/account",
+        "https://docs.stripe.com/changelog"
+      ],
+      "rate_limit_notes": "Stripe documents global API limits of 100 requests/second live mode and 25 requests/second sandbox, plus endpoint-specific limits. 429 responses indicate rate limiting; docs recommend exponential backoff and note a Stripe-Rate-Limited-Reason header.",
+      "notable_signals": "Has official client libraries (Ruby, Python, PHP, Java, Node.js, Go, .NET); explicit sandbox/test mode; extensive changelog/versioning; many API resources; recommends restricted API keys and supports access policies.",
+      "agent_confidence": 91,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://stripe.com/docs/api",
+      "https://docs.stripe.com/api",
+      "https://docs.stripe.com/keys",
+      "https://docs.stripe.com/rate-limits",
+      "https://docs.stripe.com/get-started/account",
+      "https://docs.stripe.com/changelog"
+    ],
+    "verification_notes": "Verified from fetched docs only. REST and authentication are explicit in API reference. Access tier inferred as self-serve free for sandbox/testing because docs say account can be used immediately in testing environments and sample test API key is included in examples; production/live payments may require account setup, but API experimentation is self-serve. Auth method includes api_key and basic because curl example uses basic-auth-style username:key syntax with the API key, though primary mechanism is API-key-based authentication. MCP existence marked true only because Stripe docs explicitly include 'Model Context Protocol' in navigation; evidence is insufficient to characterize implementation beyond existence of related documentation."
+  },
+  {
+    "app_id": 31,
+    "app": "Google Ads",
+    "verified_result": {
+      "id": 31,
+      "app": "Google Ads",
+      "category": "Marketing, Ads, Email and Social",
+      "description": "Google Ads provides a programmatic interface for managing Google Ads accounts and campaigns, including automated account management, custom reporting, ad management based on inventory, and Smart Bidding strategy management.",
+      "auth_methods": [
+        "oauth2",
+        "other"
+      ],
+      "auth_notes": "The docs explicitly include 'Authentication & authorization', 'OAuth 2.0 internals', user authentication workflows, and a 'login-customer-id' request header for API calls. The access model page also states users or service accounts can be given access to Google Ads accounts.",
+      "access_tier": "partner_gated_contact_sales",
+      "gating_reason": "Fetched pages describe authentication and access models but do not show self-serve API enrollment or pricing. Evidence is insufficient to confirm whether API access is immediately self-serve; the provided text does not explicitly state the signup gate.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Extensive API surface for account management, campaigns, ads, budgets, bidding, reporting, audiences, conversions, keyword planning, experiments, and more.",
+        "mcp_exists": true,
+        "mcp_notes": "The introduction page explicitly lists 'Google Ads MCP server' under the developer toolkit."
+      },
+      "buildability_verdict": "ready_with_workaround",
+      "blocker": "The fetched evidence does not explicitly state the API access/enrollment gating requirements, so a human must confirm whether a developer token, account approval, or paid Google Ads account is required before production use.",
+      "evidence_urls": [
+        "https://developers.google.com/google-ads",
+        "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+        "https://developers.google.com/google-ads/api/docs/oauth/access-model"
+      ],
+      "rate_limit_notes": "The introduction page navigation references 'API limits and quotas', 'System limits', and 'Rate limits', but the fetched excerpts do not include actual numeric limits.",
+      "notable_signals": "Official client libraries are referenced. The docs explicitly mention REST API sections, OAuth 2.0, user/service account access concepts, webhook support, Google Ads scripts, and an official Google Ads MCP server.",
+      "agent_confidence": 68,
+      "needs_human_review": true,
+      "human_review_reason": "The fetched evidence confirms API existence, REST docs, OAuth-based auth, and broad capabilities, but it does not explicitly state the API access approval/enrollment process or whether a developer token/payment/admin approval is required. Access tier and exact gating therefore need human confirmation."
+    },
+    "evidence_checked": [
+      "https://developers.google.com/google-ads",
+      "https://developers.google.com/google-ads/api/docs/get-started/introduction",
+      "https://developers.google.com/google-ads/api/docs/oauth/access-model"
+    ],
+    "verification_notes": "Used only the provided fetched text. Marked auth as OAuth2 plus other because the evidence explicitly mentions OAuth 2.0 and also mentions service accounts/access model, but the excerpt does not fully detail service-account token mechanics. Marked API type as REST because the introduction page includes a REST API section; no GraphQL evidence found. Marked for human review because the provided excerpts do not explicitly state access gating or enrollment requirements."
+  },
+  {
+    "app_id": 71,
+    "app": "Notion",
+    "verified_result": {
+      "id": 71,
+      "app": "Notion",
+      "category": "Productivity and Project Management",
+      "description": "Notion provides a REST API for workspace content and collaboration data, including pages, databases, views, comments, files, search, and users; it also offers webhooks and a hosted Notion MCP server for AI tools.",
+      "auth_methods": [
+        "oauth2",
+        "token"
+      ],
+      "auth_notes": "Public connections use OAuth 2.0. Internal connections use a static API token. Personal access tokens use a static bearer token/user-scoped token.",
+      "access_tier": "self_serve_free",
+      "gating_reason": "Docs state developers can create personal access tokens and public/internal connections in the Developer portal, and note you can create and use a public connection without listing it on the Marketplace.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "REST API covers pages, databases/data sources, views, comments, file uploads, search, users, webhooks, and related objects/endpoints.",
+        "mcp_exists": true,
+        "mcp_notes": "Docs include a Notion MCP section describing Notion MCP as a hosted server that connects AI tools to a Notion workspace via OAuth."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://developers.notion.com",
+        "https://developers.notion.com/guides/get-started/authorization",
+        "https://developers.notion.com/reference/intro",
+        "https://developers.notion.com/reference/request-limits",
+        "https://developers.notion.com/guides/mcp/overview"
+      ],
+      "rate_limit_notes": "The API enforces per-connection limits averaging 3 requests/second with some bursts, plus per-workspace limits. Exceeding limits returns HTTP 429 with rate_limited; docs say to handle 429/529 and respect Retry-After.",
+      "notable_signals": "Webhooks are supported for real-time events. Public connections can be used without Marketplace listing, though Marketplace listing requires security review. OAuth token exchange returns access_token and refresh_token. Hosted MCP server exists for AI assistants.",
+      "agent_confidence": 93,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://developers.notion.com",
+      "https://developers.notion.com/guides/get-started/overview",
+      "https://developers.notion.com/guides/get-started/authorization",
+      "https://developers.notion.com/reference/intro",
+      "https://developers.notion.com/reference/request-limits",
+      "https://developers.notion.com/guides/mcp/overview"
+    ],
+    "verification_notes": "Used only fetched Notion developer docs. Auth methods mapped from docs: OAuth 2.0 for public connections; static API token / bearer token for internal connections and PATs. Access tier set to self_serve_free because docs describe free personal workspace/PAT path and self-serve developer portal creation; however exact pricing plan availability for all features is not exhaustively detailed in the excerpts. API surface classified as REST based on explicit REST wording. MCP existence confirmed from Notion MCP overview."
+  },
+  {
+    "app_id": 11,
+    "app": "Zendesk",
+    "verified_result": {
+      "id": 11,
+      "app": "Zendesk",
+      "category": "Support and Helpdesk",
+      "description": "Zendesk is an AI-first customer and employee service platform for ticketing, help centers, messaging, live chat, phone, and contact center workflows, with integrations and APIs.",
+      "auth_methods": [
+        "oauth2",
+        "api_key",
+        "basic"
+      ],
+      "auth_notes": "Developer docs state API requests can be authorized using email address plus API token, or with an OAuth access token. Existing customers using basic authentication can continue for now, though Zendesk recommends API tokens or OAuth. Global OAuth tokens are required for apps/integrations distributed to multiple Zendesk customers.",
+      "access_tier": "self_serve_trial",
+      "gating_reason": "Main site and pricing page both advertise a 14-day free trial with no credit card required; paid plans also exist, and some enterprise plans require contacting sales.",
+      "api_surface": {
+        "type": "REST",
+        "breadth": "Public JSON REST API with Support/Help Center APIs and many documented endpoints; docs mention prebuilt integrations and APIs for custom workflows/data connections.",
+        "mcp_exists": true,
+        "mcp_notes": "Fetched evidence only shows third-party GitHub repository search results for Zendesk MCP servers; no first-party Zendesk MCP product/documentation is shown."
+      },
+      "buildability_verdict": "ready_today",
+      "blocker": null,
+      "evidence_urls": [
+        "https://zendesk.com",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+        "https://developer.zendesk.com/api-reference/introduction/requests/",
+        "https://www.zendesk.com/pricing/",
+        "https://github.com/search?q=zendesk+mcp&type=repositories"
+      ],
+      "rate_limit_notes": "Zendesk documents plan-based Support/Help Center API limits of 200/400/400/700/2500 requests per minute depending on Suite plan, 429 responses with Retry-After on limit exceed, ticketing-specific headers, endpoint-specific limits, jobs limit of 30 concurrent queued/running jobs, app limits, and account-wide limit of 100,000 requests/minute.",
+      "notable_signals": "Main site says 'Integrate Zendesk with your existing systems through prebuilt integrations and APIs' and highlights 1,800+ apps/integrations. Pricing page confirms self-serve purchase/trial for lower tiers and sales-assisted enterprise. Developer docs specify SSL/TLS 1.2+, JSON API, and multiple auth modes.",
+      "agent_confidence": 86,
+      "needs_human_review": false,
+      "human_review_reason": ""
+    },
+    "evidence_checked": [
+      "https://zendesk.com",
+      "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "https://developer.zendesk.com/api-reference/introduction/rate-limits/",
+      "https://developer.zendesk.com/api-reference/introduction/requests/",
+      "https://www.zendesk.com/pricing/",
+      "https://github.com/search?q=zendesk+mcp&type=repositories"
+    ],
+    "verification_notes": "Used only fetched page text. Category is supported by product/pricing language around customer service, employee service, ticketing, help center, contact center. API surface is verified as REST/JSON from developer docs. Auth methods verified from security/auth page. Access tier chosen as self_serve_trial because site explicitly offers 14-day free trial; enterprise plan contact-sales noted in gating reason. MCP existence marked true only in the sense that public MCP servers exist in GitHub results, but notes clarify this is third-party and not first-party Zendesk evidence."
+  }
+]

@@ -1,0 +1,2 @@
+{"id": 1, "app": "Salesforce", "category": "CRM and Sales", "error_type": "RuntimeError", "error": "Agent exhausted 8 tool rounds without a valid record_app_research call for app 1 Salesforce."}
+{"id": 2, "app": "HubSpot", "category": "CRM and Sales", "error_type": "RuntimeError", "error": "Agent exhausted 8 tool rounds without a valid record_app_research call for app 2 HubSpot."}
