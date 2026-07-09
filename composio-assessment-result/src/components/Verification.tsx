@@ -1,11 +1,20 @@
 import { useMemo, useState } from 'react';
-import type { AccuracyReport, GoldAccuracy, VerificationRow } from '../types/data';
-import { pct, pct1 } from '../lib/format';
+import type {
+  AccuracyReport,
+  EvidenceLiveness,
+  GoldAccuracy,
+  GoldRow,
+  GoldStandard,
+  VerificationRow,
+} from '../types/data';
+import { host, pct, pct1 } from '../lib/format';
 
 interface Props {
   accuracy: AccuracyReport;
   verification: VerificationRow[];
   gold: GoldAccuracy;
+  goldStandard: GoldStandard;
+  evidence: EvidenceLiveness;
 }
 
 function fmt(v: unknown): string {
@@ -16,13 +25,55 @@ function fmt(v: unknown): string {
   return String(v);
 }
 
-export default function Verification({ accuracy, verification, gold }: Props) {
+// Per-app objective correctness (auth_methods + api_surface.type) for one pass,
+// read straight off the gold rows so nothing is hardcoded.
+type ObjResult = { auth: boolean | null; api: boolean | null };
+
+function objectiveByApp(rows: GoldRow[]): Map<string, ObjResult> {
+  const m = new Map<string, ObjResult>();
+  for (const r of rows) {
+    if (r.field !== 'auth_methods' && r.field !== 'api_surface_type') continue;
+    const e = m.get(r.app) ?? { auth: null, api: null };
+    if (r.field === 'auth_methods') e.auth = r.correct;
+    else e.api = r.correct;
+    m.set(r.app, e);
+  }
+  return m;
+}
+
+function mark(v: boolean | null | undefined) {
+  if (v === null || v === undefined) return <span className="ga-na">—</span>;
+  return v ? <span className="ok">✓</span> : <span className="no">✕</span>;
+}
+
+function ObjMarks({ r }: { r?: ObjResult }) {
+  return (
+    <span className="ga-marks">
+      <span className="ga-mk">auth {mark(r?.auth)}</span>
+      <span className="ga-mk">API {mark(r?.api)}</span>
+    </span>
+  );
+}
+
+export default function Verification({
+  accuracy,
+  verification,
+  gold,
+  goldStandard,
+  evidence,
+}: Props) {
   const [pass, setPass] = useState<'pass1' | 'pass2'>('pass2');
   const [missesOnly, setMissesOnly] = useState(true);
   const [collapsed, setCollapsed] = useState(true);
 
   const goldDelta = gold.objective_accuracy.pass2 - gold.objective_accuracy.pass1;
   const llmDelta = accuracy.pass2_accuracy - accuracy.pass1_accuracy;
+
+  const obj1 = useMemo(() => objectiveByApp(gold.pass1_rows), [gold]);
+  const obj2 = useMemo(() => objectiveByApp(gold.pass2_rows), [gold]);
+  const urlsChecked = evidence.unique_urls_checked;
+  const liveUrls = evidence.url_verdict_counts.ok;
+  const zeroLive = evidence.rows_with_zero_live_evidence.length;
 
   const rows = useMemo(() => {
     return verification.filter((r) => r.pass === pass && (!missesOnly || !r.correct));
@@ -35,17 +86,18 @@ export default function Verification({ accuracy, verification, gold }: Props) {
     <section className="section" id="verification">
       <div className="wrap">
         <div className="section-head">
-          <span className="section-num">03</span>
+          <span className="section-num">04</span>
           <div>
             <div className="kicker">The verification</div>
             <div className="bp-figline">
-              FIG_03 · ACCURACY · {pct(gold.objective_accuracy.pass1)} → {pct(gold.objective_accuracy.pass2)}
+              FIG_04 · ACCURACY · {pct(gold.objective_accuracy.pass1)} → {pct(gold.objective_accuracy.pass2)}
             </div>
             <h2 className="bp-title">Accuracy, checked two ways — and shown honestly</h2>
             <p className="section-sub">
-              The corrected agent ran across all 100 apps. Accuracy was then checked independently:
-              an LLM verifier covered a hard 20-app sample spanning all 10 categories, while
-              official-doc gold checks covered 8 apps.
+              The corrected Pass-2 prompt ran across all 100 apps. Accuracy was then checked
+              independently: 8 apps were hand-audited against official docs (the number to trust),
+              and an LLM verifier covered a hard 20-app sample spanning all 10 categories as a
+              secondary diagnostic.
             </p>
           </div>
         </div>
@@ -91,13 +143,73 @@ export default function Verification({ accuracy, verification, gold }: Props) {
           </div>
         </div>
 
+        <div className="gold-audit">
+          <div className="ga-head">
+            <h3 className="ga-title">The 8-app human audit — read by hand from official docs</h3>
+            <p className="ga-sub">
+              The <b>75%</b> is objective-field accuracy (auth&nbsp;+&nbsp;API type) on this{' '}
+              <b>8-app sample</b> — not a 100-app measurement. All 100 apps received the corrected
+              Pass-2 prompt; these 8 are the hand-checked ground truth it is spot-checked against.
+            </p>
+          </div>
+          <div className="ga-scroll">
+            <table className="ga-table">
+              <thead>
+                <tr>
+                  <th>App</th>
+                  <th>Pass&nbsp;1 · obj</th>
+                  <th>Pass&nbsp;2 · obj</th>
+                  <th>Official source</th>
+                  <th>Evidence</th>
+                </tr>
+              </thead>
+              <tbody>
+                {goldStandard.apps.map((a) => (
+                  <tr key={a.id}>
+                    <td className="ga-app">{a.app}</td>
+                    <td>
+                      <ObjMarks r={obj1.get(a.app)} />
+                    </td>
+                    <td>
+                      <ObjMarks r={obj2.get(a.app)} />
+                    </td>
+                    <td className="ga-src">
+                      <a href={a.source} target="_blank" rel="noreferrer noopener" title={a.source}>
+                        {host(a.source)}
+                      </a>
+                    </td>
+                    <td className="ga-ev">
+                      <details>
+                        <summary>quote</summary>
+                        <span className="ga-quote">“{a.quote}”</span>
+                      </details>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div className="ev-trust" aria-label="Evidence-URL liveness">
+            <span className="ev-trust-lbl">Evidence liveness</span>
+            <span className="ev-stat">
+              <b>{urlsChecked}</b> URLs checked
+            </span>
+            <span className="ev-stat">
+              <b>{liveUrls}</b> live
+            </span>
+            <span className="ev-stat">
+              <b>{zeroLive}</b> rows with zero live evidence
+            </span>
+          </div>
+        </div>
+
         <button
           className="table-collapse"
           onClick={() => setCollapsed((c) => !c)}
           aria-expanded={!collapsed}
         >
           <span className="tc-label">
-            {collapsed ? 'Show' : 'Hide'} the field-by-field comparison
+            {collapsed ? 'Show' : 'Hide'} the LLM verifier’s field-by-field comparison
           </span>
           <span className="tc-meta">
             click to {collapsed ? 'expand' : 'collapse'} {collapsed ? '▸' : '▾'}

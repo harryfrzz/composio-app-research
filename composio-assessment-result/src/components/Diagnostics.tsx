@@ -20,10 +20,10 @@ export default function Diagnostics({ accuracy }: Props) {
       <span className="bp-corner br" aria-hidden="true" />
       <div className="wrap">
         <div className="section-head">
-          <span className="section-num">05</span>
+          <span className="section-num">06</span>
           <div>
             <div className="kicker kicker-bad">Pass 1 diagnostics</div>
-            <div className="bp-figline">FIG_05 · FAILURE MODES · {totalMisses} misses</div>
+            <div className="bp-figline">FIG_06 · FAILURE MODES · {totalMisses} misses</div>
             <h2 className="bp-title">Why the misses happened</h2>
             <p className="section-sub">
               Diagnosed failure modes across the pass-1 sample. The corrected prompt targeted these

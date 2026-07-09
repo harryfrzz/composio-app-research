@@ -3,7 +3,9 @@ import type {
   AccuracyReport,
   AppRecord,
   AutomationReport,
+  EvidenceLiveness,
   GoldAccuracy,
+  GoldStandard,
   Patterns,
   ResearchData,
   VerificationRow,
@@ -22,6 +24,8 @@ const DATA_URLS = {
   verification: `${base}data/verification_sample.json`,
   gold: `${base}data/gold_accuracy.json`,
   automation: `${base}data/automation_report.json`,
+  goldStandard: `${base}data/gold_standard.json`,
+  evidence: `${base}data/evidence_liveness.json`,
 } as const;
 
 async function fetchJson<T>(url: string): Promise<T> {
@@ -47,6 +51,14 @@ function validate(data: ResearchData): ResearchData {
   assert(typeof data.accuracy.pass1_accuracy === 'number', 'accuracy missing pass1_accuracy');
   assert(Array.isArray(data.verification), 'verification must be an array');
   assert(typeof data.gold.objective_accuracy?.pass1 === 'number', 'gold missing objective_accuracy');
+  assert(
+    Array.isArray(data.goldStandard.apps) && data.goldStandard.apps.length > 0,
+    'gold_standard missing apps',
+  );
+  assert(
+    typeof data.evidence.unique_urls_checked === 'number',
+    'evidence_liveness missing unique_urls_checked',
+  );
   return data;
 }
 
@@ -63,15 +75,27 @@ export function useResearchData(): LoadState {
     let cancelled = false;
     (async () => {
       try {
-        const [apps, patterns, accuracy, verification, gold, automation] = await Promise.all([
-          fetchJson<AppRecord[]>(DATA_URLS.apps),
-          fetchJson<Patterns>(DATA_URLS.patterns),
-          fetchJson<AccuracyReport>(DATA_URLS.accuracy),
-          fetchJson<VerificationRow[]>(DATA_URLS.verification),
-          fetchJson<GoldAccuracy>(DATA_URLS.gold),
-          fetchJson<AutomationReport>(DATA_URLS.automation),
-        ]);
-        const data = validate({ apps, patterns, accuracy, verification, gold, automation });
+        const [apps, patterns, accuracy, verification, gold, automation, goldStandard, evidence] =
+          await Promise.all([
+            fetchJson<AppRecord[]>(DATA_URLS.apps),
+            fetchJson<Patterns>(DATA_URLS.patterns),
+            fetchJson<AccuracyReport>(DATA_URLS.accuracy),
+            fetchJson<VerificationRow[]>(DATA_URLS.verification),
+            fetchJson<GoldAccuracy>(DATA_URLS.gold),
+            fetchJson<AutomationReport>(DATA_URLS.automation),
+            fetchJson<GoldStandard>(DATA_URLS.goldStandard),
+            fetchJson<EvidenceLiveness>(DATA_URLS.evidence),
+          ]);
+        const data = validate({
+          apps,
+          patterns,
+          accuracy,
+          verification,
+          gold,
+          automation,
+          goldStandard,
+          evidence,
+        });
         if (!cancelled) setState({ data, error: null, loading: false });
       } catch (err) {
         if (!cancelled) {

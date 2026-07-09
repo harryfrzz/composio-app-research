@@ -1,9 +1,9 @@
 # Composio App-Research Agent
 
 A Python agent that researches 100 apps with Composio's SDK + hosted MCP — auth,
-access tier, API surface, and a buildability verdict, with an evidence URL for
-every answer — then verifies its own accuracy and clusters the findings. A small
-React site presents the results.
+access tier, API surface, and a buildability verdict, with one or more evidence
+URLs supporting every app record — then verifies its own accuracy and clusters the
+findings. A small React site presents the results.
 
 **Live demo:** https://composio-app-research-bice.vercel.app
 · **Source:** https://github.com/harryfrzz/composio-app-research

@@ -18,7 +18,8 @@ export default function Headline({ patterns, gold, apps }: Props) {
       <h1>Which of 100 apps can become an agent toolkit today — and what blocks the rest.</h1>
       <p className="hero-lede">
         An agent built on Composio's own SDK + hosted MCP researched 100 apps — auth, access tier,
-        API surface, and a buildability verdict, with an evidence URL for every answer.
+        API surface, and a buildability verdict, with one or more evidence URLs supporting every
+        app record.
       </p>
 
       <div className="statstrip" role="list">
@@ -40,7 +41,7 @@ export default function Headline({ patterns, gold, apps }: Props) {
             <span className="arrow">→</span>
             <span className="to">{pct(gold.objective_accuracy.pass2)}</span>
           </div>
-          <div className="lbl">verified accuracy (after correction)</div>
+          <div className="lbl">8-app human-audited objective accuracy</div>
         </div>
       </div>
 

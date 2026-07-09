@@ -142,6 +142,34 @@ export interface GoldAccuracy {
   pass2_rows: GoldRow[];
 }
 
+// data/gold_standard.json — the 8 hand-read app records, one official source
+// URL + quote each. The audit table pairs these with pass1/pass2 results derived
+// from GoldAccuracy.
+export interface GoldStandardApp {
+  id: number;
+  app: string;
+  auth_methods: string[];
+  api_surface_type: string;
+  access_tier: string;
+  source: string;
+  quote: string;
+}
+
+export interface GoldStandard {
+  _meta: Record<string, string>;
+  apps: GoldStandardApp[];
+}
+
+// data/evidence_liveness.json — the evidence-URL liveness gate. Only the summary
+// fields are read by the frontend; per_row/url_status are kept for the raw link.
+export interface EvidenceLiveness {
+  total_rows: number;
+  unique_urls_checked: number;
+  url_verdict_counts: { ok: number; dead: number; blocked: number };
+  rows_with_dead_evidence: number[];
+  rows_with_zero_live_evidence: number[];
+}
+
 export interface AutomationReport {
   total_apps: number;
   traces_found: number;
@@ -173,4 +201,6 @@ export interface ResearchData {
   verification: VerificationRow[];
   gold: GoldAccuracy;
   automation: AutomationReport;
+  goldStandard: GoldStandard;
+  evidence: EvidenceLiveness;
 }

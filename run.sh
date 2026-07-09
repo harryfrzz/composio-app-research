@@ -50,7 +50,7 @@ echo "[6/8] hand-verified gold scoring (authoritative accuracy)"
 "$PY" research_agent/score_gold.py
 
 echo "[7/8] automation rollup — what ran automatically vs needed a human"
-"$PY" research_agent/automation_report.py
+"$PY" research_agent/automation_report.py --results data/pass2_corrected.json
 
 echo "[8/8] pattern analysis on the corrected dataset"
 "$PY" analysis/patterns.py --input data/pass2_corrected.json
@@ -61,7 +61,8 @@ if [ -d "$dst" ]; then
   echo "→ syncing outputs into the web app ($dst)"
   mkdir -p "$dst/traces"
   cp data/pass2_corrected.json data/accuracy_report.json data/verification_sample.json \
-     data/gold_accuracy.json data/automation_report.json data/gold_standard.json "$dst"/
+     data/gold_accuracy.json data/automation_report.json data/gold_standard.json \
+     data/evidence_liveness.json "$dst"/
   cp analysis/patterns.json "$dst"/patterns.json
   cp data/traces/*.jsonl "$dst/traces"/ 2>/dev/null || true
 fi

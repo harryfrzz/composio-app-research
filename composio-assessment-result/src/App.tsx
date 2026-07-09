@@ -1,6 +1,7 @@
 import { useResearchData } from './hooks/useResearchData';
 import TopBar from './components/TopBar';
 import Headline from './components/Headline';
+import CategoryPatterns from './components/CategoryPatterns';
 import AgentSummary from './components/AgentSummary';
 import FindingsTable from './components/FindingsTable';
 import SampleDesign from './components/SampleDesign';
@@ -9,8 +10,8 @@ import Diagnostics from './components/Diagnostics';
 import Footer from './components/Footer';
 
 // The entire experience is one top-to-bottom page: an unnumbered hero, then the
-// numbered sections 01 agent → 02 sample design → 03 verification → 04 findings →
-// 05 diagnostics → footer.
+// numbered sections 01 patterns → 02 agent → 03 sample design → 04 verification →
+// 05 findings → 06 diagnostics → footer.
 // Per-app tool-call traces live as raw log files (data/traces/*.jsonl), linked from the footer.
 export default function App() {
   const { data, error, loading } = useResearchData();
@@ -31,9 +32,16 @@ export default function App() {
     <>
       <TopBar />
       <Headline patterns={data.patterns} gold={data.gold} apps={data.apps} />
-      <AgentSummary patterns={data.patterns} automation={data.automation} />
+      <CategoryPatterns patterns={data.patterns} />
+      <AgentSummary automation={data.automation} />
       <SampleDesign apps={data.apps} accuracy={data.accuracy} gold={data.gold} patterns={data.patterns} />
-      <Verification accuracy={data.accuracy} verification={data.verification} gold={data.gold} />
+      <Verification
+        accuracy={data.accuracy}
+        verification={data.verification}
+        gold={data.gold}
+        goldStandard={data.goldStandard}
+        evidence={data.evidence}
+      />
       <FindingsTable apps={data.apps} />
       <Diagnostics accuracy={data.accuracy} />
       <Footer />

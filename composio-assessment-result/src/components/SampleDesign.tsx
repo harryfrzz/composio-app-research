@@ -80,11 +80,11 @@ export default function SampleDesign({ apps, accuracy, gold, patterns }: Props) 
       <span className="bp-corner br" aria-hidden="true" />
       <div className="wrap">
         <div className="section-head">
-          <span className="section-num">02</span>
+          <span className="section-num">03</span>
           <div>
             <div className="kicker">The design</div>
             <div className="bp-figline">
-              FIG_02 · SAMPLE DESIGN · N={total} → {sampleSize} → {goldSize}
+              FIG_03 · SAMPLE DESIGN · N={total} → {sampleSize} → {goldSize}
             </div>
             <h2 className="bp-title">Why 100, then 20, then 8</h2>
             <p className="section-sub">

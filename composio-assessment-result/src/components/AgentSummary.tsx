@@ -1,8 +1,7 @@
-import type { AutomationReport, Patterns } from '../types/data';
+import type { AutomationReport } from '../types/data';
 import { titleize } from '../lib/format';
 
 interface Props {
-  patterns: Patterns;
   automation: AutomationReport;
 }
 
@@ -13,12 +12,16 @@ const REASON_LABELS: Record<string, string> = {
   auth_inference: 'Auth inference',
   mcp_uncertainty: 'MCP uncertainty',
   docs_unfetchable_or_js: 'Docs unfetchable / JS-rendered',
+  evidence_gap: 'Evidence gap',
 };
 
-export default function AgentSummary({ patterns, automation }: Props) {
-  const flagged = patterns.human_review_distribution.needs_review ?? 0;
-  const verified = patterns.human_review_distribution.agent_verified ?? 0;
-  const total = flagged + verified;
+export default function AgentSummary({ automation }: Props) {
+  // Totals and the reason breakdown both come from automation_report.json (built
+  // from data/pass2_corrected.json), so the flagged count equals the sum of the
+  // reason counts by construction — no more Pass-2/Pass-1 mismatch.
+  const flagged = automation.needed_human_apps;
+  const verified = automation.fully_automated_apps;
+  const total = automation.total_apps;
   const toolCalls = automation.totals.tool_calls;
 
   const reasons = Object.entries(automation.human_review_reason_breakdown).sort((a, b) => b[1] - a[1]);
@@ -28,10 +31,10 @@ export default function AgentSummary({ patterns, automation }: Props) {
     <section className="section agent-summary" id="agent">
       <div className="wrap">
         <div className="section-head">
-          <span className="section-num">01</span>
+          <span className="section-num">02</span>
           <div>
             <div className="kicker">The agent</div>
-            <div className="bp-figline">FIG_01 · AUTOMATION · {toolCalls.toLocaleString()} TOOL CALLS</div>
+            <div className="bp-figline">FIG_02 · AUTOMATION · {toolCalls.toLocaleString()} TOOL CALLS</div>
             <h2 className="bp-title">What was built, and where it needed a human</h2>
           </div>
         </div>

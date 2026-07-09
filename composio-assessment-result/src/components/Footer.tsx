@@ -7,7 +7,9 @@ const RAW_FILES = [
   ['patterns.json', 'clusters'],
   ['accuracy_report.json', 'accuracy'],
   ['verification_sample.json', 'hits & misses'],
-  ['gold_accuracy.json', 'hand-verified'],
+  ['gold_accuracy.json', 'hand-verified scores'],
+  ['gold_standard.json', '8 hand-read sources'],
+  ['evidence_liveness.json', 'evidence-URL liveness'],
 ];
 
 export default function Footer() {
