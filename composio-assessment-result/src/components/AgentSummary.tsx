@@ -28,10 +28,10 @@ export default function AgentSummary({ patterns, automation }: Props) {
     <section className="section agent-summary" id="agent">
       <div className="wrap">
         <div className="section-head">
-          <span className="section-num">02</span>
+          <span className="section-num">01</span>
           <div>
             <div className="kicker">The agent</div>
-            <div className="bp-figline">FIG_02 · AUTOMATION · {toolCalls.toLocaleString()} TOOL CALLS</div>
+            <div className="bp-figline">FIG_01 · AUTOMATION · {toolCalls.toLocaleString()} TOOL CALLS</div>
             <h2 className="bp-title">What was built, and where it needed a human</h2>
           </div>
         </div>

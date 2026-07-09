@@ -74,10 +74,10 @@ export default function FindingsTable({ apps }: Props) {
     <section className="section" id="findings">
       <div className="wrap">
         <div className="section-head">
-          <span className="section-num">05</span>
+          <span className="section-num">04</span>
           <div>
             <div className="kicker">The findings</div>
-            <div className="bp-figline">FIG_05 · APP LEDGER · N={apps.length}</div>
+            <div className="bp-figline">FIG_04 · APP LEDGER · N={apps.length}</div>
             <h2 className="bp-title">All 100 apps, one row each</h2>
             <p className="section-sub">
               Filter by category or access, sort any column, expand a row for the gating reason,

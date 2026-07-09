@@ -5,7 +5,8 @@ access tier, API surface, and a buildability verdict, with an evidence URL for
 every answer — then verifies its own accuracy and clusters the findings. A small
 React site presents the results.
 
-**Live results:** https://github.com/harryfrzz/composio-app-research
+**Live demo:** https://composio-app-research-bice.vercel.app
+· **Source:** https://github.com/harryfrzz/composio-app-research
 
 ## Quick start
 

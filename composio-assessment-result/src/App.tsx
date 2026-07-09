@@ -8,8 +8,9 @@ import Verification from './components/Verification';
 import Diagnostics from './components/Diagnostics';
 import Footer from './components/Footer';
 
-// The entire experience is one top-to-bottom page, sections in the graded order:
-// 1 patterns → 2 agent → 3 sample design → 4 verification → 5 findings → 6 diagnostics → footer.
+// The entire experience is one top-to-bottom page: an unnumbered hero, then the
+// numbered sections 01 agent → 02 sample design → 03 verification → 04 findings →
+// 05 diagnostics → footer.
 // Per-app tool-call traces live as raw log files (data/traces/*.jsonl), linked from the footer.
 export default function App() {
   const { data, error, loading } = useResearchData();

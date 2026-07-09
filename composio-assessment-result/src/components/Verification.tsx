@@ -35,11 +35,11 @@ export default function Verification({ accuracy, verification, gold }: Props) {
     <section className="section" id="verification">
       <div className="wrap">
         <div className="section-head">
-          <span className="section-num">04</span>
+          <span className="section-num">03</span>
           <div>
             <div className="kicker">The verification</div>
             <div className="bp-figline">
-              FIG_04 · ACCURACY · {pct(gold.objective_accuracy.pass1)} → {pct(gold.objective_accuracy.pass2)}
+              FIG_03 · ACCURACY · {pct(gold.objective_accuracy.pass1)} → {pct(gold.objective_accuracy.pass2)}
             </div>
             <h2 className="bp-title">Accuracy, checked two ways — and shown honestly</h2>
             <p className="section-sub">
